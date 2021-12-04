@@ -4,11 +4,22 @@ yellow: #F29F05
 orange: #D9731A
 red: #BF5841 */
 
-a {
-  color: white;
-  text-transform: uppercase;
-  text-decoration: none;
+
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
+
+blockquote {
+  border-left-color: #D9731A;
+  border-left-style: solid;
+  border-radius: 5px;
+  line-height: 2em;
+  margin-left: 2em;
+  padding-left: 2em;
+}
+
 header {
   color: #D9731A;
   font-size: 2em;
@@ -16,35 +27,33 @@ header {
   margin-right: auto;
 }
 
+li > a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 .nav-header {
   margin: 2em auto auto auto;
 }
 
-body {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
 .nav-bar {
-  flex-grow: 1;
-  flex-shrink: 1;
   flex-basis: 30%;
+  flex-grow: 3;
+  flex-shrink: 3;
+  margin-right: 2%;
   position: sticky;
   top: 0px;
-  margin-right: 2%;
 }
 
 .main-content {
-  flex-grow: 3;
-  flex-shrink: 3;
+  flex-grow: 7;
+  flex-shrink: 7;
   flex-basis: 66%;
   margin-right: 2%;
-  margin-top: 4%;
+  margin-top: 9%;
 }
 code {
-  min-width: 100%;
-  padding: 1em;
   margin: auto;
   background-color: #f7f7f7;
   border-radius: 5px;
@@ -54,6 +63,9 @@ code {
   word-wrap: normal;
   word-break: normal;
   position: relative;
+}
+
+.block-code {
   display: block;
 }
 
@@ -69,4 +81,12 @@ nav > ul > li {
 
 nav > ul > li:hover {
   background-color: #038C7F;
+}
+
+@media (max-width: 800px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }

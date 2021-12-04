@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <!--set initial-scale=1 for a 1:1 aspect raito-->
+  <!--set initial-scale=1 for a 1:1 aspect ratio-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Rapp Technical Documentation</title>
@@ -213,13 +213,13 @@
               <li>CSS link tag</li>
             </ul>
           <pre>
-            <code class="language-html">
+            <code class="language-html block-code">
               &lt;!doctype html&gt;
 
               &lt;html lang="en"&gt;
               &lt;head&gt;
                 &lt;meta charset="utf-8"&gt;
-                &lt;!--set initial-scale=1 for a 1:1 aspect raito--&gt;
+                &lt;!--set initial-scale=1 for a 1:1 aspect ratio--&gt;
                 &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
 
                 &lt;title&gt;A Basic HTML5 Template&lt;/title&gt;
@@ -253,16 +253,25 @@
         </article>
     </section>
     <section class="main-section" id="matches_header_text">
-      <header>Topic Description</header>
+      <header>!doctype html</header>
         <article>
-          <p>text</p>
-            <ul>
-              <li class="code-button">example 1:</li>
-              <li>example 2:</li>
-              <li>example 3:</li>
-              <li>example 4:</li>
-              <li>example 5:</li>
-            </ul>
+          <p>What is the <code>!doctype html</code> and what is it used for?  The best explanation I have found is on the <a href="https://www.w3.org/QA/Tips/Doctype">W3C website</a></p>
+            <blockquote>
+              <h3>Don't forget to add a doctype</h3><br>
+              <b>add what?</b><br>
+              For historical reasons, browsers behave more predictably and more uniformly when they parse HTML documents that start with a so-called Doctype declaration: <br>
+              <code>&lt;!DOCTYPE html&gt;</code>
+              <br>
+              <b>Why?</b>
+              <br>
+              Initially, the Doctype declaration was used in HTML when it was defined as a language based on SGML, and later, on XML.
+              <br>
+              Since the presence of that declaration was in general a signal that the document author followed standard practices,
+              that declaration was used in HTML5 to distinguish between a standards-compliant parsing mode and a so-called quirks parsing mode.
+              <br>
+              Whether you want to parse HTML files via an SGML or an XML parser, or simply make sure that your document gets parsed the same way
+              across HTML5 processors, the doctype is a critical component of a quality HTML document.
+</blockquote>
           <code>
           </code>
         </article>
