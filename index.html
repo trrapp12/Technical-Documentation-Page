@@ -29,14 +29,14 @@
 
 <body>
   <!-- your content here... -->
-  <nav id="nav-bar">
-    <header>50 Things I wish I understood coming out of a Bootcamp</header>
+  <nav id="nav-bar" class="nav-bar">
+    <header class="nav-header">50 Things I wish I understood coming out of a Bootcamp</header>
       <ul>
         <li>
           <a href="#introduction" class="nav-link">Introduction</a>
         </li>
         <li>
-          <a href="" class="nav-link">HTML template</a>
+          <a href="#html_template" class="nav-link">HTML template</a>
         </li>
         <li>
           <a href="" class="nav-link">matches section/header</a>
@@ -184,30 +184,72 @@
         </li>
       </ul>
   </nav>
-  <main id="main-doc">
+  <main id="main-doc" class="main-content">
     <section class="main-section" id="introduction">
       <header>Introduction</header>
         <article>
           <p>This documentation is a quick collection of 50 things that I was introduced to in my bootcamp experience, but didn't really learn well.
           I'm offering them here as a guide to people who are just out of bootcamps on some principles that really would have helped speed my progression
         I had been able to learn them better at the beginnng.</p>
+        <p> Please remember this is a work in progress.  Some sections may have missing information.  I balance many priorities among this one.  Please be patient</p>
           <code>
           </code>
         </article>
     </section>
-    <section class="main-section" id="matches_header_text">
-      <header>Topic Description</header>
+    <section class="main-section" id="html_template">
+      <header>HTML Template</header>
         <article>
-          <p>text</p>
+          <p>Almost every project I have done has an HTML page.  Having a pre-filled template with all the basics filled out so I can just copy and paste is an
+          immense time saver.</p>
             <ul>
-              <li class="code-button">example 1:</li>
-              <li>example 2:</li>
-              <li>example 3:</li>
-              <li>example 4:</li>
-              <li>example 5:</li>
+              <li class="code-button">To include in the template</li>
+              <li>!doctype html tag</li>
+              <li>Head tag</li>
+              <li>Meta tags</li>
+              <li>Title tags</li>
+              <li>Favicon Link</li>
+              <li>Body tag</li>
+              <li>Script tag</li>
+              <li>CSS link tag</li>
             </ul>
-          <code>
+          <pre>
+            <code class="language-html">
+              &lt;!doctype html&gt;
+
+              &lt;html lang="en"&gt;
+              &lt;head&gt;
+                &lt;meta charset="utf-8"&gt;
+                &lt;!--set initial-scale=1 for a 1:1 aspect raito--&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+
+                &lt;title&gt;A Basic HTML5 Template&lt;/title&gt;
+                &lt;meta name="description" content="A simple HTML5 Template for new projects."&gt;
+                &lt;meta name="author" content="SitePoint"&gt;
+
+                &lt;meta property="og:title" content="A Basic HTML5 Template"&gt;
+                &lt;meta property="og:type" content="website"&gt;
+                &lt;meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/"&gt;
+                &lt;meta property="og:description" content="A simple HTML5 Template for new projects."&gt;
+                &lt;meta property="og:image" content="image.png"&gt;
+
+                &lt;!--favicon.ico is for older browsers--&gt;
+                &lt;link rel="icon" href="/favicon.ico"&gt;
+                &lt;!--favicon.svg is for newer browsers--&gt;
+                &lt;link rel="icon" href="/favicon.svg" type="image/svg+xml"&gt;
+                &lt;link rel="apple-touch-icon" href="/apple-touch-icon.png"&gt;
+
+                &lt;!--add multiple stylesheets if needed, last one to load will have higher priority for any conflicts--&gt;
+                &lt;link rel="stylesheet" href="css/styles.css?v=1.0"&gt;
+
+              &lt;/head&gt;
+
+              &lt;body&gt;
+                &lt;!-- your content here... --&gt;
+                &lt;script src="js/scripts.js"&gt;&lt;/script&gt;
+              &lt;/body&gt;
+              &lt;/html&gt;
           </code>
+        </pre>
         </article>
     </section>
     <section class="main-section" id="matches_header_text">
