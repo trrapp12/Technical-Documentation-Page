@@ -104,6 +104,10 @@ nav > ul > li:hover {
   background-color: #038C7F;
 }
 
+.title {
+  text-transform: uppercase;
+}
+
 td {
   border-color: #D9731A;
   border-width: 2px;
