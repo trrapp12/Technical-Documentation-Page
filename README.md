@@ -11,6 +11,7 @@
 
 ##### Trevor Rapp
 
+![Technical Documentation Gif](https://user-images.githubusercontent.com/11747875/144737552-ff829ab6-ff03-4651-843f-430dd00fb681.gif)
 <br />
 
 
