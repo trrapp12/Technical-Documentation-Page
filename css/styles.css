@@ -48,8 +48,13 @@ li > a {
   flex-grow: 3;
   flex-shrink: 3;
   margin-right: 2%;
+
+}
+
+.sticky {
   position: sticky;
-  top: 0px;
+  top: 0;
+  left: 0;
 }
 
 .main-content {
@@ -79,7 +84,7 @@ li::marker {
   color: #D9731A;
 }
 
-nav > ul > li {
+nav > div > ul > li {
   background-color: #04B2D9;
   border-style: solid;
   border-width: 2px;
