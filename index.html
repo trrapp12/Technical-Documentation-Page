@@ -51,6 +51,33 @@
           <a href="#memorize_for_loops" class="nav-link">Memorize For Loops</a>
         </li>
         <li>
+          <a href="did_you_know_for_loops_can_go_backwards" class="nav-link">Did you know for loops can go backwards?</a>
+        </li>
+        <li>
+          <a href="#var_let_and_const" class="nav-link">Var, Let, and Const</a>
+        </li>
+        <li>
+          <a href="#TDZ_temporal_dead_zone" class="nav-link">TDZ (temporal dead zone)</a>
+        </li>
+        <li>
+          <a href="#an_object_or_array_declared_by_const_isnt_necessarily_immutable" class="nav-link">An Object or Array declared by const isn't necessarily immutable</a>
+        </li>
+        <li>
+          <a href="#cli_commands" class="nav-link">CLI Commands</a>
+        </li>
+        <li>
+          <a href="" class="nav-link">matches section/header</a>
+        </li>
+        <li>
+          <a href="" class="nav-link">matches section/header</a>
+        </li>
+        <li>
+          <a href="" class="nav-link">matches section/header</a>
+        </li>
+        <li>
+          <a href="" class="nav-link">matches section/header</a>
+        </li>
+        <!-- <li>
           <a href="" class="nav-link">matches section/header</a>
         </li>
         <li>
@@ -154,34 +181,7 @@
         </li>
         <li>
           <a href="" class="nav-link">matches section/header</a>
-        </li>
-        <li>
-          <a href="" class="nav-link">matches section/header</a>
-        </li>
-        <li>
-          <a href="" class="nav-link">matches section/header</a>
-        </li>
-        <li>
-          <a href="" class="nav-link">matches section/header</a>
-        </li>
-        <li>
-          <a href="" class="nav-link">matches section/header</a>
-        </li>
-        <li>
-          <a href="" class="nav-link">matches section/header</a>
-        </li>
-        <li>
-          <a href="" class="nav-link">matches section/header</a>
-        </li>
-        <li>
-          <a href="" class="nav-link">matches section/header</a>
-        </li>
-        <li>
-          <a href="" class="nav-link">matches section/header</a>
-        </li>
-        <li>
-          <a href="" class="nav-link">matches section/header</a>
-        </li>
+        </li> -->
       </ul>
   </nav>
   <main id="main-doc" class="main-content">
@@ -463,7 +463,214 @@
         </pre>
         </article>
     </section>
+    <section class="main-section" id="did_you_know_for_loops_can_go_backwards">
+      <header>Did you know for loops can go backwards?</header>
+        <article>
+          <p>They can!  Check it out.  Essentially the same process , but nice to know you can do it because sometimes it makes sense to work in reverse.
+            See this <a href="https://www.htmlgoodies.com/javascript/the-advantages-of-backwards-iteration-as-demonstrated-in-javascript/">use case.</a></p>
+          <pre>
+            <code class="code-block">
+              for (let i = 10; i > 0; i--) {
+                ourArray.push(i);
+              }
+          </code>
+        </pre>
+        </article>
+    </section>
+    <section class="main-section" id="var_let_and_const">
+      <header>Var, Let, and Const</header>
+        <article>
+          <p>When I first learned about <code>var</code>,<code>let</code>,and <code>const</code> I picked up that the value of <code>var</code> and <code>let</code> could be reassigned, and
+          that <code>const</code> couldn't, but I didn't pick up on their lexical scope.  Super important!  So what are the differences?</p>
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Global Scope</th>
+              <th>Function Scope</th>
+              <th>Block Scope</th>
+              <th>Able to be Redeclared</th>
+              <th>Able to be Updated</th>
+              <th>Able to be Hoisted</th>
+            </tr>
+            <tr>
+              <td>Var</td>
+              <td>Automatically has global scope if declared outside of a function</td>
+              <td>Has function scope if declared in a function</td>
+              <td>Does not have block scope (this is why it gets hoisted)</td>
+              <td>Yep, that's why it's tempting to use it</td>
+              <td>Yep, that's why it's tempting to use it</td>
+              <td>Yep</td>
+            </tr>
+            <tr>
+              <td>Let</td>
+              <td>Nope</td>
+              <td>Nope</td>
+              <td>Yep</td>
+              <td>Nope (at least not within the same scope)</td>
+              <td>Yes (within it's scope)</td>
+              <td>Yep, but if you try to use it before it's declared you'll get a <code>Reference Error</code>It's the TDZ thing.</td>
+            </tr>
+            <tr>
+              <td>Const</td>
+              <td>Nope</td>
+              <td>Nope</td>
+              <td>Yep</td>
+              <td>Nope</td>
+              <td>Objects and Arrays, yes.  Otherwise, no</td>
+              <td>Gets hoisted, but remain uninitialized until evaluated at runtime.  Hence the TDZ</td>
+            </tr>
+          </table>
+        </article>
+    </section>
+    <section class="main-section" id="TDZ_temporal_dead_zone">
+      <header>TDZ (Temporal Dead Zone)</header>
+        <article>
+          <p>From <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let">MDN</a></p>
+          <h3>Temporal dead zone (TDZ)</h3>
+          <blockquote>let variables cannot be read/written until they have been fully initialized,
+            which happens when they are declared (if no initial value is specified on declaration,
+            the variable is initialized with a value of undefined). Accessing the variable before the
+            initialization results in a ReferenceError.
+            <em>Note: This differs from var variables, which will return a value of undefined if they are accessed before they are declared.</em>
+            The variable is said to be in a "temporal dead zone" (TDZ) from the start of the block until the initialization has completed.
+            <pre>
+              <code class="code-block">
+                { // TDZ starts at beginning of scope
+                  console.log(bar); // undefined
+                  console.log(foo); // ReferenceError
+                  var bar = 1;
+                  let foo = 2; // End of TDZ (for foo)
+                }
+              </code>
+            </pre>
+            The term "temporal" is used because the zone depends on the order of execution (time) rather than the order in which the code is written (position).
+            For example, the code below works because, even though the function that uses the let variable appears before the variable is declared, the function is called outside the TDZ.
+          <code>
+          </code>
+        </article>
+    </section>
+    <section class="main-section" id="an_object_or_array_declared_by_const_isnt_necessarily_immutable">
+      <header>An Object or Array declared by const isn't necessarily immutable</header>
+        <article>
+          <p>From <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const">MDN:</a></p>
+            <blockquote>
+              Constants are block-scoped, much like variables declared using the let keyword.
+              The value of a constant can't be changed through reassignment
+              (i.e. by using the assignment operator), and it can't be redeclared
+              (i.e. through a variable declaration). <b>However, if a constant is an
+              object or array its properties or items can be updated or removed.</b>
+            </blockquote>
+            <p>Check out this example:</p>
+            <pre>
+              <code class="code-block">
+                const a = [1, 2];
+                //const a is declared and defined as an array with two values...'1' and '2'
+                const a = [1, 2, 3];
+                //will return 'TypeError: invalid assignment' because a const can't be reassigned
+                const.push(3);
+                console.log(a);
+                //returns [1, 2, 3] because you can still modify the items or properties of arrays and objects
+              </code>
+            </pre>
+          <code>
+          </code>
+        </article>
+    </section>
+    <section class="main-section" id="cli_commands">
+      <header>CLI commands</header>
+        <article>
+          <p>Here are a few commonly used Git Commands.  Learning how to use the CLI in your favorite IDE (mine is Atom) will make a ton of difference in how fast you can accomplish things</p>
+            <ul>
+              <li><code>mkdir folderName</code> makes a new folder with the name "folderName"</li>
+              <li><code>cd folderName </code> navigates into the "folderName" folder</li>
+              <li><code>cd .. </code> navigates out of the "folderName" folder</li>
+              <li><code>ls</code> shows anything else in the folder</li>
+              <li><code class="code-block">echo "# delete-me" >> README.md
+                git init
+                git add README.md
+                git commit -m "first commit"
+                git branch -M main
+                git remote add origin https://github.com/accountName/File-Name.git
+                git push -u origin main
+              </code> This series of commands writes a file "README.md", initializes a new git directory, adds the README.md file, creates the first commit statement, creates and sets the
+            branch you will be making commits to as "main", sets the remote git server repo to the repo named "File-Name" in the 'accountName' account, and then pushes all of that to the remote repo.
+          It's a classical order of commands used to start any new Github Repo on your local computer.</li>
+              <li><code>git status</code> shows what folders have changes and will or won't be pushed if you make a push at the current point.</li>
+              <li><code>git add -A</code> adds all of the untracked changes to a tracked status</li>
+              <li><code>git commit -m ""</code> adds a commit message with whatever is in between the quotes</li>
+              <li><code>git push</code> pushes local changes to the github repo</li>
+              <li><code>git checkout</code> shows at any certain commit what the changes were that were made (so you can get an idea which commit to revert to if you need to change)</li>
+              <li><code>git merge</code> merges changes from working branches into main branches</li>
+              <li><code>git fetch</code> sometimes your changes get pushed wrong and you have to "store" them while you're trying to fix a problem before they can then be pushed.  This is usually
+              accomplished with a <code>git fetch</code> and a <code>git stash</code></li>
+              <li><code>git pull</code> ALWAYS, ALWAYS, ALWAYS do this before a <code>git push</code>. It pulls down other co-workers changes into your changes before you push yours.  If this doesn't
+              happeny, you often overwrite hours, days or even weeks of their hard work.</li>
+            </ul>
+          <code>
+          </code>
+        </article>
+    </section>
     <section class="main-section" id="matches_header_text">
+      <header>Topic Description</header>
+        <article>
+          <p>text</p>
+            <ul>
+              <li class="code-button">example 1:</li>
+              <li>example 2:</li>
+              <li>example 3:</li>
+              <li>example 4:</li>
+              <li>example 5:</li>
+            </ul>
+          <code>
+          </code>
+        </article>
+    </section>
+    <section class="main-section" id="matches_header_text">
+      <header>Topic Description</header>
+        <article>
+          <p>text</p>
+            <ul>
+              <li class="code-button">example 1:</li>
+              <li>example 2:</li>
+              <li>example 3:</li>
+              <li>example 4:</li>
+              <li>example 5:</li>
+            </ul>
+          <code>
+          </code>
+        </article>
+    </section>
+    <section class="main-section" id="matches_header_text">
+      <header>Topic Description</header>
+        <article>
+          <p>text</p>
+            <ul>
+              <li class="code-button">example 1:</li>
+              <li>example 2:</li>
+              <li>example 3:</li>
+              <li>example 4:</li>
+              <li>example 5:</li>
+            </ul>
+          <code>
+          </code>
+        </article>
+    </section>
+    <section class="main-section" id="matches_header_text">
+      <header>Topic Description</header>
+        <article>
+          <p>text</p>
+            <ul>
+              <li class="code-button">example 1:</li>
+              <li>example 2:</li>
+              <li>example 3:</li>
+              <li>example 4:</li>
+              <li>example 5:</li>
+            </ul>
+          <code>
+          </code>
+        </article>
+    </section>
+    <!-- <section class="main-section" id="matches_header_text">
       <header>Topic Description</header>
         <article>
           <p>text</p>
@@ -1002,142 +1209,7 @@
           <code>
           </code>
         </article>
-    </section>
-    <section class="main-section" id="matches_header_text">
-      <header>Topic Description</header>
-        <article>
-          <p>text</p>
-            <ul>
-              <li class="code-button">example 1:</li>
-              <li>example 2:</li>
-              <li>example 3:</li>
-              <li>example 4:</li>
-              <li>example 5:</li>
-            </ul>
-          <code>
-          </code>
-        </article>
-    </section>
-    <section class="main-section" id="matches_header_text">
-      <header>Topic Description</header>
-        <article>
-          <p>text</p>
-            <ul>
-              <li class="code-button">example 1:</li>
-              <li>example 2:</li>
-              <li>example 3:</li>
-              <li>example 4:</li>
-              <li>example 5:</li>
-            </ul>
-          <code>
-          </code>
-        </article>
-    </section>
-    <section class="main-section" id="matches_header_text">
-      <header>Topic Description</header>
-        <article>
-          <p>text</p>
-            <ul>
-              <li class="code-button">example 1:</li>
-              <li>example 2:</li>
-              <li>example 3:</li>
-              <li>example 4:</li>
-              <li>example 5:</li>
-            </ul>
-          <code>
-          </code>
-        </article>
-    </section>
-    <section class="main-section" id="matches_header_text">
-      <header>Topic Description</header>
-        <article>
-          <p>text</p>
-            <ul>
-              <li class="code-button">example 1:</li>
-              <li>example 2:</li>
-              <li>example 3:</li>
-              <li>example 4:</li>
-              <li>example 5:</li>
-            </ul>
-          <code>
-          </code>
-        </article>
-    </section>
-    <section class="main-section" id="matches_header_text">
-      <header>Topic Description</header>
-        <article>
-          <p>text</p>
-            <ul>
-              <li class="code-button">example 1:</li>
-              <li>example 2:</li>
-              <li>example 3:</li>
-              <li>example 4:</li>
-              <li>example 5:</li>
-            </ul>
-          <code>
-          </code>
-        </article>
-    </section>
-    <section class="main-section" id="matches_header_text">
-      <header>Topic Description</header>
-        <article>
-          <p>text</p>
-            <ul>
-              <li class="code-button">example 1:</li>
-              <li>example 2:</li>
-              <li>example 3:</li>
-              <li>example 4:</li>
-              <li>example 5:</li>
-            </ul>
-          <code>
-          </code>
-        </article>
-    </section>
-    <section class="main-section" id="matches_header_text">
-      <header>Topic Description</header>
-        <article>
-          <p>text</p>
-            <ul>
-              <li class="code-button">example 1:</li>
-              <li>example 2:</li>
-              <li>example 3:</li>
-              <li>example 4:</li>
-              <li>example 5:</li>
-            </ul>
-          <code>
-          </code>
-        </article>
-    </section>
-    <section class="main-section" id="matches_header_text">
-      <header>Topic Description</header>
-        <article>
-          <p>text</p>
-            <ul>
-              <li class="code-button">example 1:</li>
-              <li>example 2:</li>
-              <li>example 3:</li>
-              <li>example 4:</li>
-              <li>example 5:</li>
-            </ul>
-          <code>
-          </code>
-        </article>
-    </section>
-    <section class="main-section" id="matches_header_text">
-      <header>Topic Description</header>
-        <article>
-          <p>text</p>
-            <ul>
-              <li class="code-button">example 1:</li>
-              <li>example 2:</li>
-              <li>example 3:</li>
-              <li>example 4:</li>
-              <li>example 5:</li>
-            </ul>
-          <code>
-          </code>
-        </article>
-    </section>
+    </section> -->
   </main>
   <script src="js/scripts.js"></script>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
