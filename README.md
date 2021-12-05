@@ -65,7 +65,7 @@ This is an example of a technical documentation page.  It comes complete with a 
 ### Project published at: 
 ---
 
-[QUADRAStalkr](https://trrapp12.github.io/Technical-Documentation-Page/)
+[Technical Documentation Page](https://trrapp12.github.io/Technical-Documentation-Page/)
 
 ### More Information:
 ---
