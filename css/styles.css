@@ -20,17 +20,23 @@ blockquote {
   padding-left: 2em;
 }
 
+.code-block {
+  display: block;
+  width: 80%;
+}
+
 header {
   color: #D9731A;
   font-size: 2em;
-  width: 80%;
   margin-right: auto;
+  margin-top: 1.5em;
+  width: 80%;
 }
 
 li > a {
   color: white;
-  text-transform: uppercase;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .nav-header {
@@ -81,6 +87,30 @@ nav > ul > li {
 
 nav > ul > li:hover {
   background-color: #038C7F;
+}
+
+td {
+  border-color: #D9731A;
+  border-width: 2px;
+  padding: 1.15em;
+}
+
+th {
+  color: #D9731A;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+tr:nth-child(even) > td {
+  background-color: #f7f7f7;
+}
+
+table {
+  border-color: #D9731A;
+  border-width: 2px;
+  border-style: solid;
+  padding: 2em;
 }
 
 @media (max-width: 800px) {

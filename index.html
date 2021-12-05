@@ -29,8 +29,8 @@
 
 <body>
   <!-- your content here... -->
-  <nav id="nav-bar" class="nav-bar">
-    <header class="nav-header">50 Things I wish I understood coming out of a Bootcamp</header>
+  <nav id="navbar" class="nav-bar">
+    <header class="nav-header">25 Things I wish I understood coming out of a Bootcamp</header>
       <ul>
         <li>
           <a href="#introduction" class="nav-link">Introduction</a>
@@ -39,16 +39,16 @@
           <a href="#html_template" class="nav-link">HTML template</a>
         </li>
         <li>
-          <a href="" class="nav-link">matches section/header</a>
+          <a href="#doctype_html" class="nav-link">!doctype_html</a>
         </li>
         <li>
-          <a href="" class="nav-link">matches section/header</a>
+          <a href="#What_is_actually_new_with_HTML5" class="nav-link">What is actually new with HTML5?</a>
         </li>
         <li>
-          <a href="" class="nav-link">matches section/header</a>
+          <a href="#ada_matters" class="nav-link">ADA Matters</a>
         </li>
         <li>
-          <a href="" class="nav-link">matches section/header</a>
+          <a href="#memorize_for_loops" class="nav-link">Memorize For Loops</a>
         </li>
         <li>
           <a href="" class="nav-link">matches section/header</a>
@@ -252,7 +252,7 @@
         </pre>
         </article>
     </section>
-    <section class="main-section" id="matches_header_text">
+    <section class="main-section" id="doctype_html">
       <header>!doctype html</header>
         <article>
           <p>What is the <code>!doctype html</code> and what is it used for?  The best explanation I have found is on the <a href="https://www.w3.org/QA/Tips/Doctype">W3C website</a></p>
@@ -271,84 +271,196 @@
               <br>
               Whether you want to parse HTML files via an SGML or an XML parser, or simply make sure that your document gets parsed the same way
               across HTML5 processors, the doctype is a critical component of a quality HTML document.
-</blockquote>
-          <code>
-          </code>
+            </blockquote>
+            <p> In other words, your browser can parse your document into more than just html. The doctype tells it what to parse it into.  And as for "quirks mode",
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Quirks_Mode_and_Standards_Mode">MDN</a> explains that best.
+              <blockquote>
+                <h3>Quirks Mode and Standards Mode</h3><br>
+                In the old days of the web, pages were typically written in two versions: One for Netscape Navigator,
+                and one for Microsoft Internet Explorer. When the web standards were made at W3C,
+                browsers could not just start using them, as doing so would break most existing sites on the web.
+                Browsers therefore introduced two modes to treat new standards compliant sites differently from old legacy sites.
+                <br>
+                There are now three modes used by the layout engines in web browsers: quirks mode, almost standards mode, and full standards mode.
+                In <br>quirks mode</b>, layout emulates nonstandard behavior in Navigator 4 and Internet Explorer 5.
+                This is essential in order to support websites that were built before the widespread adoption of web standards.
+                In <b>full standards mode</b>, the behavior is (hopefully) the behavior described by the HTML and CSS specifications.
+                In <b>almost standards mode</b>, there are only a very small number of quirks implemented.
+              </blockquote
+        </article>
+    </section>
+    <section class="main-section" id="What_is_actually_new_with_HTML5">
+      <header>What is actually new with HTML5?</header>
+        <article>
+          <p>This one comes up a lot in Front-End Coding Interviews.  Unfortunately a lot of people coming out of bootcamps didn't necessarily
+          learn coding before the implemenation of the new standards.  This puts them at a disadvantage of knowing what is new if you never experienced
+          what the old was like.  So here's a brief overview of some of the new info as provided by <a href="https://www.tutorialspoint.com/html5/html5_new_tags.htm">Tutorialspoint</a></p>
+          <table>
+            <tr>
+              <th>Tags (Element)</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>&lt;article&gt;</td>
+              <td>Represents an independent piece of content of a document, such as a blog entry or newspaper article</td>
+            </tr>
+            <tr>
+              <td>&lt;aside&gt;</td>
+              <td>Represents a piece of content that is only slightly related to the rest of the page.</td>
+            </tr>
+            <tr>
+              <td>&lt;audio&gt;</td>
+              <td> Defines an audio file.</td>
+            </tr>
+            <tr>
+              <td>&lt;canvas&gt;</td>
+              <td>This is used for rendering dynamic bitmap graphics on the fly, such as graphs or games. </td>
+            </tr>
+            <tr>
+              <td>&lt;command&gt;</td>
+              <td>Represents a command the user can invoke.</td>
+            </tr>
+            <tr>
+              <td>&lt;datalist&gt;</td>
+              <td>Together with the a new list attribute for input can be used to make comboboxes</td>
+            </tr>
+            <tr>
+              <td>&lt;datalist&gt;</td>
+              <td>Represents additional information or controls which the user can obtain on demand</td>
+            </tr>
+            <tr>
+              <td>&lt;details&gt;</td>
+              <td> Represents additional information or controls which the user can obtain on demand</td>
+            </tr>
+            <tr>
+              <td>&lt;embed&gt;</td>
+              <td>Defines external interactive content or plugin.</td>
+            </tr>
+            <tr>
+              <td>&lt;figure&gt;</td>
+              <td>Represents a piece of self-contained flow content, typically referenced as a single unit from the main flow of the document.</td>
+            </tr>
+            <tr>
+              <td>&lt;footer&gt;</td>
+              <td>Represents a footer for a section and can contain information about the author, copyright information, et cetera.</td>
+            </tr>
+            <tr>
+              <td>&lt;header&gt;</td>
+              <td>Represents a group of introductory or navigational aids.</td>
+            </tr>
+            <tr>
+              <td>&lt;hgroup&gt;</td>
+              <td>Represents the header of a section.</td>
+            </tr>
+            <tr>
+              <td>&lt;keygen&gt;</td>
+              <td>Represents control for key pair generation.</td>
+            </tr>
+            <tr>
+              <td>&lt;mark&gt;</td>
+              <td>Represents a run of text in one document marked or highlighted for reference purposes, due to its relevance in another context.</td>
+            </tr>
+            <tr>
+              <td>&lt;meter&gt;</td>
+              <td>Represents a measurement, such as disk usage.</td>
+            </tr>
+            <tr>
+              <td>&lt;nav&gt;</td>
+              <td>Represents a section of the document intended for navigation.</td>
+            </tr>
+            <tr>
+              <td>&lt;output&gt;</td>
+              <td>Represents some type of output, such as from a calculation done through scripting.</td>
+            </tr>
+            <tr>
+              <td>&lt;progress&gt;</td>
+              <td>Represents a completion of a task, such as downloading or when performing a series of expensive operations.</td>
+            </tr>
+            <tr>
+              <td>&lt;ruby&gt;</td>
+              <td>Together with &lt;rt&gt; and &lt;rp&gt; allow for marking up ruby annotations.</td>
+            </tr>
+            <tr>
+              <td>&lt;section&gt;</td>
+              <td>Represents a generic document or application section</td>
+            </tr>
+            <tr>
+              <td>&lt;time&gt;</td>
+              <td>Represents a date and/or time.</td>
+            </tr>
+            <tr>
+              <td>&lt;video&gt;</td>
+              <td>Defines a video file.</td>
+            </tr>
+            <tr>
+              <td>&lt;wbr&gt;</td>
+              <td>Represents a line break opportunity.</td>
+            </tr>
+          </table>
         </article>
     </section>
     <section class="main-section" id="matches_header_text">
-      <header>Topic Description</header>
+      <header>Video Tutorials don't work</header>
         <article>
-          <p>text</p>
+          <p>So I spent a lot of time and money running through video tutorials.  I thought they would get me so far so quick.  But they didn't.  The reason isn't
+          that they are inherently bad.  It's that they are inherently passive.  You can speed through one, have a working project at the end, and still have no idea what you did.
+        The key to making them work is turning it into an active learning environment.  For me this meant adding six key ingredients.  </p>
             <ul>
-              <li class="code-button">example 1:</li>
-              <li>example 2:</li>
-              <li>example 3:</li>
-              <li>example 4:</li>
-              <li>example 5:</li>
+              <li class="code-button">Identify</li>
+                <p>Identify means that any time I came across any type of word or concept I hadn't heard of or wasn't unquestionably proficient at I had to identify it as a weakness.
+              <li>Question:</li>
+                <p> Once I had identified something, I had to question it.  What does the word mean?  What are all the working parts in this concept?  What concept do I need to know
+                  as a prerequisite to understanding this concept?  And what weaknesses can I identify in those?
+              <li>Describe:</li>
+                <p> One of the best ways to know if you understand a concept is to explain it to a third grader.  If you can take a very intricate concept and reduce it down to the most
+                  basic explanation without losing the
+              <li>Experiment:</li>
+                <p>Once I find a new concept I need to work on, and I've questioned it, and then been able to get enough academic knowledge that I can describe it, now I have to experiment.
+                  Everything changes in the wild.  And not even the best laid plans survive first contact.
+              <li>Create a Feedback Loop:</li>
+                <p>Feedback loops are simply a way to check to see if you are progressing in the right direction.  It is completely possible to run 1000 mph and not get anywhere.  I have
+                  expended countless hours on projects, but my own observational biases may prevent me from seeing areas I'm lacking, my fears may prevent me from expanding into new areas,
+                  and I just sometimes don't know what I don't know.  All of these reasons are great reasons to create some type of feedback loop, whether it's through tests, code challenges,
+                  mentors, or meetup groups.  Find someway to get some feedback on your progress so your progress won't all be for naught.
+              <li>Repetition:</li>
+                <p>Neuro-biology has spoken.  We simply cannot learn without repeatably using the same neuropathways inorder to strengthen them.  Learning cannot happen without repetition.
             </ul>
-          <code>
+        </article>
+    </section>
+    <section class="main-section" id="ada_matters">
+      <header>ADA Matters</header>
+        <article>
+          <p>This should go without saying, but it wasn't until I had personal experiences in the workplace that I understood how important it was to make a clear plan for ADA accessibility.
+          It's not just smart.  It's what good people do...</p>
+        </article>
+    </section>
+    <section class="main-section" id="memorize_for_loops">
+      <header>Memorize For Loops</header>
+        <article>
+          <p>You use it that much.  It's everywhere.  Memorize the simple for loop.  It will save you a ton of time.</p>
+          <pre>
+            <code class="code-block">
+            for (let i = 0; i < 5; i++) {
+              ourArray.push(i);
+            }
           </code>
+        </pre>
         </article>
     </section>
     <section class="main-section" id="matches_header_text">
-      <header>Topic Description</header>
+      <header>Nested For Loops</header>
         <article>
-          <p>text</p>
-            <ul>
-              <li class="code-button">example 1:</li>
-              <li>example 2:</li>
-              <li>example 3:</li>
-              <li>example 4:</li>
-              <li>example 5:</li>
-            </ul>
-          <code>
+          <p>If you ever want to apply an event listener to multiple elements with the same class you need to use a nested for loop or a combination of a for loop with <code>.map()</code>.
+          Just like the previous entry, it happpens a lot, so worth spending a little extra time memorizing the syntax and getting used to how it works.</p>
+          <pre>
+            <code class="code-block">
+            for (let i = 0; i < arr.length; i++) {
+              for (let j = 0; j < arr[i].length; j++) {
+                console.log(arr[i][j]);
+              }
+            }
           </code>
-        </article>
-    </section>
-    <section class="main-section" id="matches_header_text">
-      <header>Topic Description</header>
-        <article>
-          <p>text</p>
-            <ul>
-              <li class="code-button">example 1:</li>
-              <li>example 2:</li>
-              <li>example 3:</li>
-              <li>example 4:</li>
-              <li>example 5:</li>
-            </ul>
-          <code>
-          </code>
-        </article>
-    </section>
-    <section class="main-section" id="matches_header_text">
-      <header>Topic Description</header>
-        <article>
-          <p>text</p>
-            <ul>
-              <li class="code-button">example 1:</li>
-              <li>example 2:</li>
-              <li>example 3:</li>
-              <li>example 4:</li>
-              <li>example 5:</li>
-            </ul>
-          <code>
-          </code>
-        </article>
-    </section>
-    <section class="main-section" id="matches_header_text">
-      <header>Topic Description</header>
-        <article>
-          <p>text</p>
-            <ul>
-              <li class="code-button">example 1:</li>
-              <li>example 2:</li>
-              <li>example 3:</li>
-              <li>example 4:</li>
-              <li>example 5:</li>
-            </ul>
-          <code>
-          </code>
+        </pre>
         </article>
     </section>
     <section class="main-section" id="matches_header_text">
