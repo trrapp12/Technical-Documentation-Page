@@ -96,7 +96,7 @@ nav > div > ul > li {
   color: white;
   list-style: none;
   min-height: fit-content;
-  padding: 1em;
+  padding: .65em;
   width: 75%;
 }
 
