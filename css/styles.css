@@ -33,6 +33,11 @@ header {
   width: 80%;
 }
 
+.image {
+  width: 100%;
+  height: auto;
+}
+
 li > a {
   color: white;
   text-decoration: none;

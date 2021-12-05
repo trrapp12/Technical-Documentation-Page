@@ -72,6 +72,9 @@
         <li>
           <a href="#CLI_commands" class="nav-link">CLI Commands</a>
         </li>
+        <li>
+          <a href="#Sticky_Situation" class="nav-link">Sticky Situation</a>
+        </li>
         <!-- <li>
           <a href="" class="nav-link">matches section/header</a>
         </li>
@@ -193,6 +196,11 @@
     </div>
   </nav>
   <main id="main-doc" class="main-content">
+    <figure>
+      <img src="https://user-images.githubusercontent.com/11747875/144736698-6b705ef2-32d0-4b16-a7d6-ab5e28cba6af.jpg" class="image">
+      <figcaption>Digitized and Photoshopped portrait of the author, Trevor Rapp.</figcaption>
+    </figure>
+
     <section class="main-section" id="Introduction">
       <header>Introduction</header>
         <article>
@@ -618,22 +626,32 @@
           </code>
         </article>
     </section>
-    <!-- <section class="main-section" id="matches_header_text">
-      <header>Topic Description</header>
+    <section class="main-section" id="Sticky_Situation">
+      <header>Sticky Situation</header>
         <article>
-          <p>text</p>
+          <p>Actually as part of this project I had to learn a few things about creating a sticky menu.
+            It's not just as easy as adding <code>position: sticky;</code> in your CSS.  You need a few things:</p>
             <ul>
-              <li class="code-button">example 1:</li>
-              <li>example 2:</li>
-              <li>example 3:</li>
-              <li>example 4:</li>
-              <li>example 5:</li>
+              <li>The following code needs to be on the element you want to stick:
+              <code class="code-block">
+
+                .sticky {
+                  position: sticky;
+                  top: 0;
+                  left: 0;
+                }
+
+              </code>Notice it takes all three things.  The position, the top to indicate where it needs to start sticking.  And
+            the left indicates how far aligned left it is.  Also, notice it's just "0", not "0px".</li>
+              <li>Parent element needs to have <code>display: block</code></li>
+              <li>There needs to be at least two child elements.  Otherwise there is nothing for the sticky element to 'float' over.</li>
+              <li>Parent element cannot have <code>overflow: hidden</code>, <code>overflow: scroll</code>, or <code>overflow: auto</code></li>
+              <li>Parent element can't have <code>display: flexbox;</code>.  This was my problem.  I got around it by keeping my containers I need to have flex with
+              flexbox and then put a <code>&lt;div&gt;</code> inbetween the parent and child and making the div the new parent and giving it a <code>display: block;</code></li>
             </ul>
-          <code>
-          </code>
         </article>
     </section>
-    <section class="main-section" id="matches_header_text">
+    <!--<section class="main-section" id="matches_header_text">
       <header>Topic Description</header>
         <article>
           <p>text</p>
