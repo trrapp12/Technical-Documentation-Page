@@ -24,13 +24,17 @@
 <br>
 
 ---
+
 ### Description:
----
+
 
 This is an example of a technical documentation page.  It comes complete with a sticky nav bar and a great use of HTML5 tags for clear, semantic coding.  Also, design is responsive with use of flex-box.  Overall very-well put together project with clean design, good use of color, semantically coded, and solid use of CSS.  Great portfolio piece.
+<br>
+<br>
+
+---
 
 ### Project demonstrates the following:
----
 
 - [X] **User Story #1:** My product landing page should have a header element with a corresponding id="header".
 
@@ -62,13 +66,23 @@ This is an example of a technical documentation page.  It comes complete with a 
 
 - [X] **User Story #15:** My Technical Documentation page should use at least one media query.
 
-### Project published at: 
+<br>
+<br>
+
 ---
+
+### Project published at: 
+
 
 [Technical Documentation Page](https://trrapp12.github.io/Technical-Documentation-Page/)
 
-### More Information:
+<br>
+<br>
+
 ---
+
+### More Information:
+
 
 \**For more information see my [LinkedIn](https://www.linkedin.com/in/trevor-rapp-042a1037) or return to my [Github](https://github.com/trrapp12)*
 
