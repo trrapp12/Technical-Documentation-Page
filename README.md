@@ -28,7 +28,7 @@
 ### Description:
 
 
-This is an example of a technical documentation page.  It comes complete with a sticky nav bar and a great use of HTML5 tags for clear, semantic coding.  Also, design is responsive with use of flex-box.  Overall very-well put together project with clean design, good use of color, semantically coded, and solid use of CSS.  Great portfolio piece.
+*This is an example of a technical documentation page.  It comes complete with a sticky nav bar and a great use of HTML5 tags for clear, semantic coding.  Also, design is responsive with use of flex-box.  Overall very-well put together project with clean design, good use of color, semantically coded, and solid use of CSS.  Great portfolio piece.*
 <br>
 <br>
 
