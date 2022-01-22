@@ -1,5 +1,8 @@
 # Technical-Documentation-Page
 
+
+##### Contributors: Trevor Rapp
+
  ---
 
 <br>
