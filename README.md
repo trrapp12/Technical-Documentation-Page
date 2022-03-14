@@ -1,5 +1,8 @@
 # Technical-Documentation-Page
 
+
+##### Contributors: Trevor Rapp
+
  ---
 
 <br>
@@ -11,7 +14,8 @@
 
 ##### Trevor Rapp
 
-<br />![QUADRAStalkr](https://user-images.githubusercontent.com/11747875/144578671-1739a4ec-23e8-45e1-80a9-7d7fb39856d0.gif)
+![Technical Documentation Gif](https://user-images.githubusercontent.com/11747875/144737552-ff829ab6-ff03-4651-843f-430dd00fb681.gif)
+<br />
 
 
 
@@ -23,13 +27,17 @@
 <br>
 
 ---
-### Description:
----
 
-This is an example for a Product Landing Page for the QUADRAStalkr, an imaginary drone from an imaginary company (that I have all the rights to :smirk: :smirk: :smirk: ).  
+### Description:
+
+
+*This is an example of a technical documentation page.  It comes complete with a sticky nav bar and a great use of HTML5 tags for clear, semantic coding.  Also, design is responsive with use of flex-box.  Overall very-well put together project with clean design, good use of color, semantically coded, and solid use of CSS.  Great portfolio piece.*
+<br>
+<br>
+
+---
 
 ### Project demonstrates the following:
----
 
 - [X] **User Story #1:** My product landing page should have a header element with a corresponding id="header".
 
@@ -61,13 +69,23 @@ This is an example for a Product Landing Page for the QUADRAStalkr, an imaginary
 
 - [X] **User Story #15:** My Technical Documentation page should use at least one media query.
 
-### Project published at: 
+<br>
+<br>
+
 ---
 
-[QUADRAStalkr](https://trrapp12.github.io/Technical-Documentation-Page/)
+### Project published at: 
+
+
+[Technical Documentation Page](https://trrapp12.github.io/Technical-Documentation-Page/)
+
+<br>
+<br>
+
+---
 
 ### More Information:
----
+
 
 \**For more information see my [LinkedIn](https://www.linkedin.com/in/trevor-rapp-042a1037) or return to my [Github](https://github.com/trrapp12)*
 
