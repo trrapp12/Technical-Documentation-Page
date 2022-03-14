@@ -3,7 +3,9 @@ green: #038C7F
 yellow: #F29F05
 orange:
 red: #BF5841 */
-
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   display: flex;
