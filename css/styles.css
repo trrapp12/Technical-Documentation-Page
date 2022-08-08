@@ -82,11 +82,15 @@ code {
   line-height: 2;
   word-wrap: normal;
   word-break: normal;
-  position: relative;
+  max-width: 80vw;
+  word-wrap: break-word;
 }
 
 .block-code {
-  display: block;
+  display: inline-flex;
+  overflow: hidden;
+  justify-content: flex-start;
+  padding: 1em;
 }
 
 li::marker {
