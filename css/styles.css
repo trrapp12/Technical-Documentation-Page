@@ -70,7 +70,9 @@ li > a {
   flex-basis: 66%;
   margin-right: 2%;
   margin-top: 9%;
+  width: -webkit-fill-available;
 }
+
 code {
   margin: auto;
   background-color: #f7f7f7;
