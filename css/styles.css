@@ -3,8 +3,20 @@ green: #038C7F
 yellow: #F29F05
 orange:
 red: #BF5841 */
+
+/* ========================================================  Normalize ======================================================== */
+
 html {
   scroll-behavior: smooth;
+}
+
+/* ========================================================  Elements ======================================================== */
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: end;
 }
 
 body {
@@ -22,57 +34,6 @@ blockquote {
   padding-left: 2em;
 }
 
-.code-block {
-  display: block;
-  width: 80%;
-}
-
-header {
-  color: #D9731A;
-  font-size: 2em;
-  margin-right: auto;
-  margin-top: 1.5em;
-  width: 80%;
-}
-
-.image {
-  width: 100%;
-  height: auto;
-}
-
-li > a {
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.nav-header {
-  margin: 2em auto auto auto;
-}
-
-.nav-bar {
-  flex-basis: 30%;
-  flex-grow: 3;
-  flex-shrink: 3;
-  margin-right: 2%;
-
-}
-
-.sticky {
-  position: sticky;
-  top: 0;
-  left: 0;
-}
-
-.main-content {
-  flex-grow: 7;
-  flex-shrink: 7;
-  flex-basis: 66%;
-  margin-right: 2%;
-  margin-top: 9%;
-  width: -webkit-fill-available;
-}
-
 code {
   margin: auto;
   background-color: #f7f7f7;
@@ -86,15 +47,18 @@ code {
   word-wrap: break-word;
 }
 
-.block-code {
-  display: inline-flex;
-  overflow: hidden;
-  justify-content: flex-start;
-  padding: 1em;
+header {
+  color: #D9731A;
+  font-size: 2em;
+  margin-right: auto;
+  margin-top: 1.5em;
+  width: 80%;
 }
 
-li::marker {
-  color: #D9731A;
+li > a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 nav > div > ul > li {
@@ -110,10 +74,6 @@ nav > div > ul > li {
 
 nav > ul > li:hover {
   background-color: #038C7F;
-}
-
-.title {
-  text-transform: uppercase;
 }
 
 td {
@@ -140,10 +100,139 @@ table {
   padding: 2em;
 }
 
-@media (max-width: 800px) {
+/* ========================================================  Classes ======================================================== */
+
+.block-code {
+  display: inline-flex;
+  overflow: scroll;
+  justify-content: flex-start;
+  padding: 1em;
+}
+
+.code-block {
+  display: inline-flex;
+  max-width: 70vw;
+  overflow: scroll;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+li::marker {
+  color: #D9731A;
+}
+
+.main-content {
+  flex-grow: 7;
+  flex-shrink: 7;
+  flex-basis: 66%;
+  margin-right: 2%;
+  margin-top: 9%;
+  width: -webkit-fill-available;
+}
+
+.nav-header {
+  margin: 2em auto auto auto;
+}
+
+.nav-bar {
+  flex-basis: 30%;
+  flex-grow: 3;
+  flex-shrink: 3;
+  margin-right: 2%;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.table {
+  overflow: scroll;
+  display: inline-flex;
+  max-width: 98vw;
+}
+
+#Var_Let_and_Const > article {
+  align-content: flex-start;
+}
+
+/* ========================================================  Media Queries ======================================================== */
+
+@media (max-width: 900px) {
   body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .sticky > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    padding: 0px;
+  }
+
+  nav > div > ul > li {
+    background-color: #04B2D9;
+    border-style: solid;
+    border-width: 2px;
+    color: white;
+    list-style: none;
+    min-height: fit-content;
+    padding: .65em;
+    width: inherit;
+  }
+}
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  nav > div > ul > li {
+    background-color: #04B2D9;
+    border-style: solid;
+    border-width: 2px;
+    color: white;
+    list-style: none;
+    min-height: fit-content;
+    padding: .65em;
+    width: 100%;
+  }
+  code {
+    margin: auto;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    color: black;
+    font-size: 1em;
+    line-height: 2;
+    word-wrap: normal;
+    word-break: normal;
+    /* position: relative; */
+    /* width: auto; */
+    max-width: 100vw;
+    /* overflow: hidden; */
+    /* display: inline-block; */
+    word-wrap: break-word;
+  }
+
+  table {
+    border-color: #D9731A;
+    border-width: 2px;
+    border-style: solid;
+    padding: 2em;
+    display: inline-flex;
+    max-width: 100vw;
+    overflow: scroll;
+  }
+  .code-block {
+    display: inline-flex;
+    width: 80%;
+    overflow: scroll;
   }
 }
