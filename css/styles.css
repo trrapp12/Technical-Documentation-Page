@@ -6,6 +6,19 @@ red: #BF5841 */
 
 /* ========================================================  Normalize ======================================================== */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p,
+td,
+blockquote,
+li {
+  line-height: 1.5em;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -13,23 +26,13 @@ html {
 /* ========================================================  Elements ======================================================== */
 
 article {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: end;
-}
-
-body {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  overflow-x: scroll;
 }
 
 blockquote {
   border-left-color: #D9731A;
   border-left-style: solid;
   border-radius: 5px;
-  line-height: 2em;
   margin-left: 2em;
   padding-left: 2em;
 }
@@ -47,6 +50,22 @@ code {
   word-wrap: break-word;
 }
 
+.columns-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer {
+  display: flex;
+  position: sticky;
+  bottom: 100;
+  height: 10vh;
+  min-width: 100%;
+  border: 1px red solid;
+}
+
 header {
   color: #D9731A;
   font-size: 2em;
@@ -55,13 +74,13 @@ header {
   width: 80%;
 }
 
-li > a {
+li>a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-nav > div > ul > li {
+nav>ul>li {
   background-color: #04B2D9;
   border-style: solid;
   border-width: 2px;
@@ -69,10 +88,10 @@ nav > div > ul > li {
   list-style: none;
   min-height: fit-content;
   padding: .65em;
-  width: 75%;
+  max-width: 25%;
 }
 
-nav > ul > li:hover {
+nav>ul>li:hover {
   background-color: #038C7F;
 }
 
@@ -89,7 +108,7 @@ th {
   text-transform: uppercase;
 }
 
-tr:nth-child(even) > td {
+tr:nth-child(even)>td {
   background-color: #f7f7f7;
 }
 
@@ -103,16 +122,16 @@ table {
 /* ========================================================  Classes ======================================================== */
 
 .block-code {
-  display: inline-flex;
-  overflow: scroll;
-  justify-content: flex-start;
   padding: 1em;
+  display: block;
+  overflow-x: scroll;
 }
 
 .code-block {
-  display: inline-flex;
   max-width: 70vw;
   overflow: scroll;
+  display: block;
+  padding: 1em;
 }
 
 .image {
@@ -125,9 +144,6 @@ li::marker {
 }
 
 .main-content {
-  flex-grow: 7;
-  flex-shrink: 7;
-  flex-basis: 66%;
   margin-right: 2%;
   margin-top: 9%;
   width: -webkit-fill-available;
@@ -138,9 +154,6 @@ li::marker {
 }
 
 .nav-bar {
-  flex-basis: 30%;
-  flex-grow: 3;
-  flex-shrink: 3;
   margin-right: 2%;
 }
 
@@ -156,32 +169,22 @@ li::marker {
 
 .table {
   overflow: scroll;
-  display: inline-flex;
   max-width: 98vw;
 }
 
-#Var_Let_and_Const > article {
+#Var_Let_and_Const>article {
   align-content: flex-start;
 }
 
 /* ========================================================  Media Queries ======================================================== */
 
 @media (max-width: 900px) {
-  body {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
 
-  .sticky > ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: center;
+  .sticky>ul {
     padding: 0px;
   }
 
-  nav > div > ul > li {
+  nav>div>ul>li {
     background-color: #04B2D9;
     border-style: solid;
     border-width: 2px;
@@ -194,7 +197,7 @@ li::marker {
 }
 
 @media screen and (max-width: 900px) and (orientation: landscape) {
-  nav > div > ul > li {
+  nav>div>ul>li {
     background-color: #04B2D9;
     border-style: solid;
     border-width: 2px;
@@ -204,6 +207,7 @@ li::marker {
     padding: .65em;
     width: 100%;
   }
+
   code {
     margin: auto;
     background-color: #f7f7f7;
@@ -213,11 +217,7 @@ li::marker {
     line-height: 2;
     word-wrap: normal;
     word-break: normal;
-    /* position: relative; */
-    /* width: auto; */
     max-width: 100vw;
-    /* overflow: hidden; */
-    /* display: inline-block; */
     word-wrap: break-word;
   }
 
@@ -235,6 +235,7 @@ li::marker {
     max-width: 100vw;
     overflow: scroll;
   }
+
   .code-block {
     display: inline-flex;
     width: 80%;
