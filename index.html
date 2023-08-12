@@ -38,596 +38,624 @@
 
 <body>
   <!-- your content here... -->
+  <header class="nav-header title">13 Things I wish I understood coming out of a Bootcamp</header>
   <div class="columns-container">
-    <nav id="navbar" class="nav-bar sticky">
-      <header class="nav-header title">13 Things I wish I understood coming out of a Bootcamp</header>
-      <ul>
-        <li>
-          <a href="#Introduction" class="nav-link">Introduction</a>
-        </li>
-        <li>
-          <a href="#HTML_Template" class="nav-link">HTML template</a>
-        </li>
-        <li>
-          <a href="#doctype_html" class="nav-link">doctype html</a>
-        </li>
-        <li>
-          <a href="#What_is_actually_new_with_HTML5?" class="nav-link">What is actually new with HTML5?</a>
-        </li>
-        <li>
-          <a href="#Video_Tutorials" class="nav-link">Video Tutorials</a>
-        </li>
-        <li>
-          <a href="#ADA_Matters" class="nav-link">ADA Matters</a>
-        </li>
-        <li>
-          <a href="#Memorize_For_Loops" class="nav-link">Memorize For Loops</a>
-        </li>
-        <li>
-          <a href="#Nested_For_Loops" class="nav-link">Nested For Loops</a>
-        </li>
-        <li>
-          <a href="#Loops_can_go_backwards" class="nav-link">Loops can go backwards</a>
-        </li>
-        <li>
-          <a href="#Var_Let_and_Const" class="nav-link">Var, Let, and Const</a>
-        </li>
-        <li>
-          <a href="#Temporal_Dead_Zone" class="nav-link">Temporal Dead Zone</a>
-        </li>
-        <li>
-          <a href="#An_Object_or_Array_declared_by_const_is_not_necessarily_immutable" class="nav-link">An Object or
-            Array declared by const is not necessarily immutable</a>
-        </li>
-        <li>
-          <a href="#CLI_commands" class="nav-link">CLI Commands</a>
-        </li>
-        <li>
-          <a href="#Sticky_Situation" class="nav-link">Sticky Situation</a>
-        </li>
-      </ul>
-    </nav>
-    <figure>
-      <img src="https://user-images.githubusercontent.com/11747875/144736698-6b705ef2-32d0-4b16-a7d6-ab5e28cba6af.jpg"
-        class="image">
-      <figcaption>Digitized and Photoshopped portrait of the author, Trevor Rapp.</figcaption>
-    </figure>
-    <main id="main-doc" class="main-content">
+    <div class="column-one">
+      <nav id="navbar" class="nav-bar sticky">
+        <ul>
+          <li>
+            <a href="#Introduction" class="nav-link">Introduction</a>
+          </li>
+          <li>
+            <a href="#HTML_Template" class="nav-link">HTML template</a>
+          </li>
+          <li>
+            <a href="#doctype_html" class="nav-link">doctype html</a>
+          </li>
+          <li>
+            <a href="#What_is_actually_new_with_HTML5?" class="nav-link">What is actually new with HTML5?</a>
+          </li>
+          <li>
+            <a href="#Video_Tutorials" class="nav-link">Video Tutorials</a>
+          </li>
+          <li>
+            <a href="#ADA_Matters" class="nav-link">ADA Matters</a>
+          </li>
+          <li>
+            <a href="#Memorize_For_Loops" class="nav-link">Memorize For Loops</a>
+          </li>
+          <li>
+            <a href="#Nested_For_Loops" class="nav-link">Nested For Loops</a>
+          </li>
+          <li>
+            <a href="#Loops_can_go_backwards" class="nav-link">Loops can go backwards</a>
+          </li>
+          <li>
+            <a href="#Var_Let_and_Const" class="nav-link">Var, Let, and Const</a>
+          </li>
+          <li>
+            <a href="#Temporal_Dead_Zone" class="nav-link">Temporal Dead Zone</a>
+          </li>
+          <li>
+            <a href="#An_Object_or_Array_declared_by_const_is_not_necessarily_immutable" class="nav-link">An Object or
+              Array declared by const is not necessarily immutable</a>
+          </li>
+          <li>
+            <a href="#CLI_commands" class="nav-link">CLI Commands</a>
+          </li>
+          <li>
+            <a href="#Sticky_Situation" class="nav-link">Sticky Situation</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="column-two">
+
+      <figure>
+        <img src="https://user-images.githubusercontent.com/11747875/144736698-6b705ef2-32d0-4b16-a7d6-ab5e28cba6af.jpg"
+          class="image">
+        <figcaption>Digitized and Photoshopped portrait of the author, Trevor Rapp.</figcaption>
+      </figure>
+      <main id="main-doc" class="main-content">
 
 
-      <section class="main-section" id="Introduction">
-        <header>Introduction</header>
-        <article>
-          <p>This documentation is a quick collection of 50 things that I was introduced to in my bootcamp experience,
-            but
-            didn't really learn well.
-            I'm offering them here as a guide to people who are just out of bootcamps on some principles that really
-            would
-            have helped speed my progression
-            I had been able to learn them better at the beginnng.</p>
-          <p> Please remember this is a work in progress. Some sections may have missing information. I balance many
-            priorities among this one. Please be patient</p>
-          <code>
-            </code>
-        </article>
-      </section>
-      <section class="main-section" id="HTML_Template">
-        <header>HTML Template</header>
-        <article>
-          <p>Almost every project I have done has an HTML page. Having a pre-filled template with all the basics filled
-            out so I can just copy and paste is an
-            immense time saver.</p>
-          <ul>
-            <li class="code-button">To include in the template</li>
-            <li>!doctype html tag</li>
-            <li>Head tag</li>
-            <li>Meta tags</li>
-            <li>Title tags</li>
-            <li>Favicon Link</li>
-            <li>Body tag</li>
-            <li>Script tag</li>
-            <li>CSS link tag</li>
-          </ul>
-          <pre>
-              <code class="language-html block-code">
-                &lt;!doctype html&gt;
-  
-                &lt;html lang="en"&gt;
-                &lt;head&gt;
-                  &lt;meta charset="utf-8"&gt;
-                  &lt;!--set initial-scale=1 for a 1:1 aspect ratio--&gt;
-                  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-  
-                  &lt;title&gt;A Basic HTML5 Template&lt;/title&gt;
-                  &lt;meta name="description" content="A simple HTML5 Template for new projects."&gt;
-                  &lt;meta name="author" content="SitePoint"&gt;
-  
-                  &lt;meta property="og:title" content="A Basic HTML5 Template"&gt;
-                  &lt;meta property="og:type" content="website"&gt;
-                  &lt;meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/"&gt;
-                  &lt;meta property="og:description" content="A simple HTML5 Template for new projects."&gt;
-                  &lt;meta property="og:image" content="image.png"&gt;
-  
-                  &lt;!--favicon.ico is for older browsers--&gt;
-                  &lt;link rel="icon" href="/favicon.ico"&gt;
-                  &lt;!--favicon.svg is for newer browsers--&gt;
-                  &lt;link rel="icon" href="/favicon.svg" type="image/svg+xml"&gt;
-                  &lt;link rel="apple-touch-icon" href="/apple-touch-icon.png"&gt;
-  
-                  &lt;!--add multiple stylesheets if needed, last one to load will have higher priority for any conflicts--&gt;
-                  &lt;link rel="stylesheet" href="css/styles.css?v=1.0"&gt;
-  
-                &lt;/head&gt;
-  
-                &lt;body&gt;
-                  &lt;!-- your content here... --&gt;
-                  &lt;script src="js/scripts.js"&gt;&lt;/script&gt;
-                &lt;/body&gt;
-                &lt;/html&gt;
-            </code>
-          </pre>
-        </article>
-      </section>
-      <section class="main-section" id="doctype_html">
-        <header>doctype html</header>
-        <article>
-          <p>What is the <code>!doctype html</code> and what is it used for? The best explanation I have found is on the
-            <a href="https://www.w3.org/QA/Tips/Doctype">W3C website</a>
-          </p>
-          <blockquote>
-            <h3>Don't forget to add a doctype</h3><br>
-            <b>add what?</b><br>
-            For historical reasons, browsers behave more predictably and more uniformly when they parse HTML documents
-            that start with a so-called Doctype declaration: <br>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <br>
-            <b>Why?</b>
-            <br>
-            Initially, the Doctype declaration was used in HTML when it was defined as a language based on SGML, and
-            later, on XML.
-            <br>
-            Since the presence of that declaration was in general a signal that the document author followed standard
-            practices,
-            that declaration was used in HTML5 to distinguish between a standards-compliant parsing mode and a so-called
-            quirks parsing mode.
-            <br>
-            Whether you want to parse HTML files via an SGML or an XML parser, or simply make sure that your document
-            gets
-            parsed the same way
-            across HTML5 processors, the doctype is a critical component of a quality HTML document.
-          </blockquote>
-          <p> In other words, your browser can parse your document into more than just html. The doctype tells it what
-            to
-            parse it into. And as for "quirks mode",
-            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Quirks_Mode_and_Standards_Mode">MDN</a> explains
-            that best.
-          <blockquote>
-            <h3>Quirks Mode and Standards Mode</h3><br>
-            In the old days of the web, pages were typically written in two versions: One for Netscape Navigator,
-            and one for Microsoft Internet Explorer. When the web standards were made at W3C,
-            browsers could not just start using them, as doing so would break most existing sites on the web.
-            Browsers therefore introduced two modes to treat new standards compliant sites differently from old legacy
-            sites.
-            <br>
-            There are now three modes used by the layout engines in web browsers: quirks mode, almost standards mode,
-            and
-            full standards mode.
-            In <br>quirks mode</b>, layout emulates nonstandard behavior in Navigator 4 and Internet Explorer 5.
-            This is essential in order to support websites that were built before the widespread adoption of web
-            standards.
-            In <b>full standards mode</b>, the behavior is (hopefully) the behavior described by the HTML and CSS
-            specifications.
-            In <b>almost standards mode</b>, there are only a very small number of quirks implemented.
-          </blockquote>
-        </article>
-      </section>
-      <section class="main-section" id="What_is_actually_new_with_HTML5?">
-        <header>What is actually new with HTML5?</header>
-        <article>
-          <p>This one comes up a lot in Front-End Coding Interviews. Unfortunately a lot of people coming out of
-            bootcamps
-            didn't necessarily
-            learn coding before the implemenation of the new standards. This puts them at a disadvantage of knowing what
-            is new if you never experienced
-            what the old was like. So here's a brief overview of some of the new info as provided by <a
-              href="https://www.tutorialspoint.com/html5/html5_new_tags.htm">Tutorialspoint</a></p>
-          <table class="table">
-            <tr>
-              <th>Tags (Element)</th>
-              <th>Description</th>
-            </tr>
-            <tr>
-              <td>&lt;article&gt;</td>
-              <td>Represents an independent piece of content of a document, such as a blog entry or newspaper article
-              </td>
-            </tr>
-            <tr>
-              <td>&lt;aside&gt;</td>
-              <td>Represents a piece of content that is only slightly related to the rest of the page.</td>
-            </tr>
-            <tr>
-              <td>&lt;audio&gt;</td>
-              <td> Defines an audio file.</td>
-            </tr>
-            <tr>
-              <td>&lt;canvas&gt;</td>
-              <td>This is used for rendering dynamic bitmap graphics on the fly, such as graphs or games. </td>
-            </tr>
-            <tr>
-              <td>&lt;command&gt;</td>
-              <td>Represents a command the user can invoke.</td>
-            </tr>
-            <tr>
-              <td>&lt;datalist&gt;</td>
-              <td>Together with the a new list attribute for input can be used to make comboboxes</td>
-            </tr>
-            <tr>
-              <td>&lt;datalist&gt;</td>
-              <td>Represents additional information or controls which the user can obtain on demand</td>
-            </tr>
-            <tr>
-              <td>&lt;details&gt;</td>
-              <td> Represents additional information or controls which the user can obtain on demand</td>
-            </tr>
-            <tr>
-              <td>&lt;embed&gt;</td>
-              <td>Defines external interactive content or plugin.</td>
-            </tr>
-            <tr>
-              <td>&lt;figure&gt;</td>
-              <td>Represents a piece of self-contained flow content, typically referenced as a single unit from the main
-                flow of the document.</td>
-            </tr>
-            <tr>
-              <td>&lt;footer&gt;</td>
-              <td>Represents a footer for a section and can contain information about the author, copyright information,
-                et cetera.</td>
-            </tr>
-            <tr>
-              <td>&lt;header&gt;</td>
-              <td>Represents a group of introductory or navigational aids.</td>
-            </tr>
-            <tr>
-              <td>&lt;hgroup&gt;</td>
-              <td>Represents the header of a section.</td>
-            </tr>
-            <tr>
-              <td>&lt;keygen&gt;</td>
-              <td>Represents control for key pair generation.</td>
-            </tr>
-            <tr>
-              <td>&lt;mark&gt;</td>
-              <td>Represents a run of text in one document marked or highlighted for reference purposes, due to its
-                relevance in another context.</td>
-            </tr>
-            <tr>
-              <td>&lt;meter&gt;</td>
-              <td>Represents a measurement, such as disk usage.</td>
-            </tr>
-            <tr>
-              <td>&lt;nav&gt;</td>
-              <td>Represents a section of the document intended for navigation.</td>
-            </tr>
-            <tr>
-              <td>&lt;output&gt;</td>
-              <td>Represents some type of output, such as from a calculation done through scripting.</td>
-            </tr>
-            <tr>
-              <td>&lt;progress&gt;</td>
-              <td>Represents a completion of a task, such as downloading or when performing a series of expensive
-                operations.</td>
-            </tr>
-            <tr>
-              <td>&lt;ruby&gt;</td>
-              <td>Together with &lt;rt&gt; and &lt;rp&gt; allow for marking up ruby annotations.</td>
-            </tr>
-            <tr>
-              <td>&lt;section&gt;</td>
-              <td>Represents a generic document or application section</td>
-            </tr>
-            <tr>
-              <td>&lt;time&gt;</td>
-              <td>Represents a date and/or time.</td>
-            </tr>
-            <tr>
-              <td>&lt;video&gt;</td>
-              <td>Defines a video file.</td>
-            </tr>
-            <tr>
-              <td>&lt;wbr&gt;</td>
-              <td>Represents a line break opportunity.</td>
-            </tr>
-          </table>
-        </article>
-      </section>
-      <section class="main-section" id="Video_Tutorials">
-        <header>Video Tutorials</header>
-        <article>
-          <p><b>VIDEO TUTORIALS DON'T WORK!!!</b>. So I spent a lot of time and money running through video tutorials. I
-            thought they would get me so far so quick. But they didn't. The reason isn't
-            that they are inherently bad. It's that they are inherently passive. You can speed through one, have a
-            working
-            project at the end, and still have no idea what you did.
-            The key to making them work is turning it into an active learning environment. For me this meant adding six
-            key ingredients. </p>
-          <ul>
-            <li class="code-button">Identify</li>
-            <p>Identify means that any time I came across any type of word or concept I hadn't heard of or wasn't
-              unquestionably proficient at I had to identify it as a weakness.
-              <li>Question:</li>
-            <p> Once I had identified something, I had to question it. What does the word mean? What are all the working
-              parts in this concept? What concept do I need to know
-              as a prerequisite to understanding this concept? And what weaknesses can I identify in those?
-              <li>Describe:</li>
-            <p> One of the best ways to know if you understand a concept is to explain it to a third grader. If you can
-              take a very intricate concept and reduce it down to the most
-              basic explanation without losing the
-              <li>Experiment:</li>
-            <p>Once I find a new concept I need to work on, and I've questioned it, and then been able to get enough
-              academic knowledge that I can describe it, now I have to experiment.
-              Everything changes in the wild. And not even the best laid plans survive first contact.
-              <li>Create a Feedback Loop:</li>
-            <p>Feedback loops are simply a way to check to see if you are progressing in the right direction. It is
-              completely possible to run 1000 mph and not get anywhere. I have
-              expended countless hours on projects, but my own observational biases may prevent me from seeing areas I'm
-              lacking, my fears may prevent me from expanding into new areas,
-              and I just sometimes don't know what I don't know. All of these reasons are great reasons to create some
-              type of feedback loop, whether it's through tests, code challenges,
-              mentors, or meetup groups. Find someway to get some feedback on your progress so your progress won't all
-              be
-              for naught.
-              <li>Repetition:</li>
-            <p>Neuro-biology has spoken. We simply cannot learn without repeatably using the same neuropathways inorder
+        <section class="main-section" id="Introduction">
+          <header>Introduction</header>
+          <article>
+            <p>This documentation is a quick collection of 50 things that I was introduced to in my bootcamp experience,
+              but
+              didn't really learn well.
+              I'm offering them here as a guide to people who are just out of bootcamps on some principles that really
+              would
+              have helped speed my progression
+              I had been able to learn them better at the beginnng.</p>
+            <p> Please remember this is a work in progress. Some sections may have missing information. I balance many
+              priorities among this one. Please be patient</p>
+            <code>
+              </code>
+          </article>
+        </section>
+        <section class="main-section" id="HTML_Template">
+          <header>HTML Template</header>
+          <article>
+            <p>Almost every project I have done has an HTML page. Having a pre-filled template with all the basics
+              filled
+              out so I can just copy and paste is an
+              immense time saver.</p>
+            <ul>
+              <li class="code-button">To include in the template</li>
+              <li>!doctype html tag</li>
+              <li>Head tag</li>
+              <li>Meta tags</li>
+              <li>Title tags</li>
+              <li>Favicon Link</li>
+              <li>Body tag</li>
+              <li>Script tag</li>
+              <li>CSS link tag</li>
+            </ul>
+            <pre>
+                <code class="language-html block-code">
+                  &lt;!doctype html&gt;
+    
+                  &lt;html lang="en"&gt;
+                  &lt;head&gt;
+                    &lt;meta charset="utf-8"&gt;
+                    &lt;!--set initial-scale=1 for a 1:1 aspect ratio--&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    
+                    &lt;title&gt;A Basic HTML5 Template&lt;/title&gt;
+                    &lt;meta name="description" content="A simple HTML5 Template for new projects."&gt;
+                    &lt;meta name="author" content="SitePoint"&gt;
+    
+                    &lt;meta property="og:title" content="A Basic HTML5 Template"&gt;
+                    &lt;meta property="og:type" content="website"&gt;
+                    &lt;meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/"&gt;
+                    &lt;meta property="og:description" content="A simple HTML5 Template for new projects."&gt;
+                    &lt;meta property="og:image" content="image.png"&gt;
+    
+                    &lt;!--favicon.ico is for older browsers--&gt;
+                    &lt;link rel="icon" href="/favicon.ico"&gt;
+                    &lt;!--favicon.svg is for newer browsers--&gt;
+                    &lt;link rel="icon" href="/favicon.svg" type="image/svg+xml"&gt;
+                    &lt;link rel="apple-touch-icon" href="/apple-touch-icon.png"&gt;
+    
+                    &lt;!--add multiple stylesheets if needed, last one to load will have higher priority for any conflicts--&gt;
+                    &lt;link rel="stylesheet" href="css/styles.css?v=1.0"&gt;
+    
+                  &lt;/head&gt;
+    
+                  &lt;body&gt;
+                    &lt;!-- your content here... --&gt;
+                    &lt;script src="js/scripts.js"&gt;&lt;/script&gt;
+                  &lt;/body&gt;
+                  &lt;/html&gt;
+              </code>
+            </pre>
+          </article>
+        </section>
+        <section class="main-section" id="doctype_html">
+          <header>doctype html</header>
+          <article>
+            <p>What is the <code>!doctype html</code> and what is it used for? The best explanation I have found is on
+              the
+              <a href="https://www.w3.org/QA/Tips/Doctype">W3C website</a>
+            </p>
+            <blockquote>
+              <h3>Don't forget to add a doctype</h3><br>
+              <b>add what?</b><br>
+              For historical reasons, browsers behave more predictably and more uniformly when they parse HTML documents
+              that start with a so-called Doctype declaration: <br>
+              <code>&lt;!DOCTYPE html&gt;</code>
+              <br>
+              <b>Why?</b>
+              <br>
+              Initially, the Doctype declaration was used in HTML when it was defined as a language based on SGML, and
+              later, on XML.
+              <br>
+              Since the presence of that declaration was in general a signal that the document author followed standard
+              practices,
+              that declaration was used in HTML5 to distinguish between a standards-compliant parsing mode and a
+              so-called
+              quirks parsing mode.
+              <br>
+              Whether you want to parse HTML files via an SGML or an XML parser, or simply make sure that your document
+              gets
+              parsed the same way
+              across HTML5 processors, the doctype is a critical component of a quality HTML document.
+            </blockquote>
+            <p> In other words, your browser can parse your document into more than just html. The doctype tells it what
               to
-              strengthen them. Learning cannot happen without repetition.
-          </ul>
-        </article>
-      </section>
-      <section class="main-section" id="ADA_Matters">
-        <header>ADA Matters</header>
-        <article>
-          <p>This should go without saying, but it wasn't until I had personal experiences in the workplace that I
-            understood how important it was to make a clear plan for ADA accessibility.
-            It's not just smart. It's what good people do...</p>
-        </article>
-      </section>
-      <section class="main-section" id="Memorize_For_Loops">
-        <header>Memorize For Loops</header>
-        <article>
-          <p>You use it that much. It's everywhere. Memorize the simple for loop. It will save you a ton of time.</p>
-          <pre>
-              <code class="code-block">
-              for (let i = 0; i < 5; i++) {
-                ourArray.push(i);
-              }
-            </code>
-          </pre>
-        </article>
-      </section>
-      <section class="main-section" id="Nested_For_Loops">
-        <header>Nested For Loops</header>
-        <article>
-          <p>If you ever want to apply an event listener to multiple elements with the same class you need to use a
-            nested
-            for loop or a combination of a for loop with <code>.map()</code>.
-            Just like the previous entry, it happpens a lot, so worth spending a little extra time memorizing the syntax
-            and getting used to how it works.</p>
-          <pre>
-              <code class="code-block">
-              for (let i = 0; i < arr.length; i++) {
-                for (let j = 0; j < arr[i].length; j++) {
-                  console.log(arr[i][j]);
-                }
-              }
-            </code>
-          </pre>
-        </article>
-      </section>
-      <section class="main-section" id="Loops_can_go_backwards">
-        <header>Loops can go backwards</header>
-        <article>
-          <p>They can! Check it out. Essentially the same process , but nice to know you can do it because sometimes it
-            makes sense to work in reverse.
-            See this <a
-              href="https://www.htmlgoodies.com/javascript/the-advantages-of-backwards-iteration-as-demonstrated-in-javascript/">use
-              case.</a></p>
-          <pre>
-              <code class="code-block">
-                for (let i = 10; i > 0; i--) {
-                  ourArray.push(i);
-                }
-            </code>
-          </pre>
-        </article>
-      </section>
-      <section class="main-section" id="Var_Let_and_Const">
-        <header>Var, Let, and Const</header>
-        <article>
-          <p>When I first learned about <code>var</code>,<code>let</code>,and <code>const</code> I picked up that the
-            value of <code>var</code> and <code>let</code> could be reassigned, and
-            that <code>const</code> couldn't, but I didn't pick up on their lexical scope. Super important! So what are
-            the differences?</p>
-          <table class="table">
-            <tr>
-              <th>Name</th>
-              <th>Global Scope</th>
-              <th>Function Scope</th>
-              <th>Block Scope</th>
-              <th>Able to be Redeclared</th>
-              <th>Able to be Updated</th>
-              <th>Able to be Hoisted</th>
-            </tr>
-            <tr>
-              <td>Var</td>
-              <td>Automatically has global scope if declared outside of a function</td>
-              <td>Has function scope if declared in a function</td>
-              <td>Does not have block scope (this is why it gets hoisted)</td>
-              <td>Yep, that's why it's tempting to use it</td>
-              <td>Yep, that's why it's tempting to use it</td>
-              <td>Yep</td>
-            </tr>
-            <tr>
-              <td>Let</td>
-              <td>Nope</td>
-              <td>Nope</td>
-              <td>Yep</td>
-              <td>Nope (at least not within the same scope)</td>
-              <td>Yes (within it's scope)</td>
-              <td>Yep, but if you try to use it before it's declared you'll get a <code>Reference Error</code>It's the
-                TDZ
-                thing.</td>
-            </tr>
-            <tr>
-              <td>Const</td>
-              <td>Nope</td>
-              <td>Nope</td>
-              <td>Yep</td>
-              <td>Nope</td>
-              <td>Objects and Arrays, yes. Otherwise, no</td>
-              <td>Gets hoisted, but remain uninitialized until evaluated at runtime. Hence the TDZ</td>
-            </tr>
-          </table>
-        </article>
-      </section>
-      <section class="main-section" id="Temporal_Dead_Zone">
-        <header>Temporal Dead Zone</header>
-        <article>
-          <p>From <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let">MDN</a></p>
-          <h3>Temporal dead zone (TDZ)</h3>
-          <blockquote>let variables cannot be read/written until they have been fully initialized,
-            which happens when they are declared (if no initial value is specified on declaration,
-            the variable is initialized with a value of undefined). Accessing the variable before the
-            initialization results in a ReferenceError.
-            <em>Note: This differs from var variables, which will return a value of undefined if they are accessed
-              before
-              they are declared.</em>
-            The variable is said to be in a "temporal dead zone" (TDZ) from the start of the block until the
-            initialization has completed.
+              parse it into. And as for "quirks mode",
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Quirks_Mode_and_Standards_Mode">MDN</a>
+              explains
+              that best.
+            <blockquote>
+              <h3>Quirks Mode and Standards Mode</h3><br>
+              In the old days of the web, pages were typically written in two versions: One for Netscape Navigator,
+              and one for Microsoft Internet Explorer. When the web standards were made at W3C,
+              browsers could not just start using them, as doing so would break most existing sites on the web.
+              Browsers therefore introduced two modes to treat new standards compliant sites differently from old legacy
+              sites.
+              <br>
+              There are now three modes used by the layout engines in web browsers: quirks mode, almost standards mode,
+              and
+              full standards mode.
+              In <br>quirks mode</b>, layout emulates nonstandard behavior in Navigator 4 and Internet Explorer 5.
+              This is essential in order to support websites that were built before the widespread adoption of web
+              standards.
+              In <b>full standards mode</b>, the behavior is (hopefully) the behavior described by the HTML and CSS
+              specifications.
+              In <b>almost standards mode</b>, there are only a very small number of quirks implemented.
+            </blockquote>
+          </article>
+        </section>
+        <section class="main-section" id="What_is_actually_new_with_HTML5?">
+          <header>What is actually new with HTML5?</header>
+          <article>
+            <p>This one comes up a lot in Front-End Coding Interviews. Unfortunately a lot of people coming out of
+              bootcamps
+              didn't necessarily
+              learn coding before the implemenation of the new standards. This puts them at a disadvantage of knowing
+              what
+              is new if you never experienced
+              what the old was like. So here's a brief overview of some of the new info as provided by <a
+                href="https://www.tutorialspoint.com/html5/html5_new_tags.htm">Tutorialspoint</a></p>
+            <table class="table">
+              <tr>
+                <th>Tags (Element)</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>&lt;article&gt;</td>
+                <td>Represents an independent piece of content of a document, such as a blog entry or newspaper article
+                </td>
+              </tr>
+              <tr>
+                <td>&lt;aside&gt;</td>
+                <td>Represents a piece of content that is only slightly related to the rest of the page.</td>
+              </tr>
+              <tr>
+                <td>&lt;audio&gt;</td>
+                <td> Defines an audio file.</td>
+              </tr>
+              <tr>
+                <td>&lt;canvas&gt;</td>
+                <td>This is used for rendering dynamic bitmap graphics on the fly, such as graphs or games. </td>
+              </tr>
+              <tr>
+                <td>&lt;command&gt;</td>
+                <td>Represents a command the user can invoke.</td>
+              </tr>
+              <tr>
+                <td>&lt;datalist&gt;</td>
+                <td>Together with the a new list attribute for input can be used to make comboboxes</td>
+              </tr>
+              <tr>
+                <td>&lt;datalist&gt;</td>
+                <td>Represents additional information or controls which the user can obtain on demand</td>
+              </tr>
+              <tr>
+                <td>&lt;details&gt;</td>
+                <td> Represents additional information or controls which the user can obtain on demand</td>
+              </tr>
+              <tr>
+                <td>&lt;embed&gt;</td>
+                <td>Defines external interactive content or plugin.</td>
+              </tr>
+              <tr>
+                <td>&lt;figure&gt;</td>
+                <td>Represents a piece of self-contained flow content, typically referenced as a single unit from the
+                  main
+                  flow of the document.</td>
+              </tr>
+              <tr>
+                <td>&lt;footer&gt;</td>
+                <td>Represents a footer for a section and can contain information about the author, copyright
+                  information,
+                  et cetera.</td>
+              </tr>
+              <tr>
+                <td>&lt;header&gt;</td>
+                <td>Represents a group of introductory or navigational aids.</td>
+              </tr>
+              <tr>
+                <td>&lt;hgroup&gt;</td>
+                <td>Represents the header of a section.</td>
+              </tr>
+              <tr>
+                <td>&lt;keygen&gt;</td>
+                <td>Represents control for key pair generation.</td>
+              </tr>
+              <tr>
+                <td>&lt;mark&gt;</td>
+                <td>Represents a run of text in one document marked or highlighted for reference purposes, due to its
+                  relevance in another context.</td>
+              </tr>
+              <tr>
+                <td>&lt;meter&gt;</td>
+                <td>Represents a measurement, such as disk usage.</td>
+              </tr>
+              <tr>
+                <td>&lt;nav&gt;</td>
+                <td>Represents a section of the document intended for navigation.</td>
+              </tr>
+              <tr>
+                <td>&lt;output&gt;</td>
+                <td>Represents some type of output, such as from a calculation done through scripting.</td>
+              </tr>
+              <tr>
+                <td>&lt;progress&gt;</td>
+                <td>Represents a completion of a task, such as downloading or when performing a series of expensive
+                  operations.</td>
+              </tr>
+              <tr>
+                <td>&lt;ruby&gt;</td>
+                <td>Together with &lt;rt&gt; and &lt;rp&gt; allow for marking up ruby annotations.</td>
+              </tr>
+              <tr>
+                <td>&lt;section&gt;</td>
+                <td>Represents a generic document or application section</td>
+              </tr>
+              <tr>
+                <td>&lt;time&gt;</td>
+                <td>Represents a date and/or time.</td>
+              </tr>
+              <tr>
+                <td>&lt;video&gt;</td>
+                <td>Defines a video file.</td>
+              </tr>
+              <tr>
+                <td>&lt;wbr&gt;</td>
+                <td>Represents a line break opportunity.</td>
+              </tr>
+            </table>
+          </article>
+        </section>
+        <section class="main-section" id="Video_Tutorials">
+          <header>Video Tutorials</header>
+          <article>
+            <p><b>VIDEO TUTORIALS DON'T WORK!!!</b>. So I spent a lot of time and money running through video tutorials.
+              I
+              thought they would get me so far so quick. But they didn't. The reason isn't
+              that they are inherently bad. It's that they are inherently passive. You can speed through one, have a
+              working
+              project at the end, and still have no idea what you did.
+              The key to making them work is turning it into an active learning environment. For me this meant adding
+              six
+              key ingredients. </p>
+            <ul>
+              <li class="code-button">Identify</li>
+              <p>Identify means that any time I came across any type of word or concept I hadn't heard of or wasn't
+                unquestionably proficient at I had to identify it as a weakness.
+                <li>Question:</li>
+              <p> Once I had identified something, I had to question it. What does the word mean? What are all the
+                working
+                parts in this concept? What concept do I need to know
+                as a prerequisite to understanding this concept? And what weaknesses can I identify in those?
+                <li>Describe:</li>
+              <p> One of the best ways to know if you understand a concept is to explain it to a third grader. If you
+                can
+                take a very intricate concept and reduce it down to the most
+                basic explanation without losing the
+                <li>Experiment:</li>
+              <p>Once I find a new concept I need to work on, and I've questioned it, and then been able to get enough
+                academic knowledge that I can describe it, now I have to experiment.
+                Everything changes in the wild. And not even the best laid plans survive first contact.
+                <li>Create a Feedback Loop:</li>
+              <p>Feedback loops are simply a way to check to see if you are progressing in the right direction. It is
+                completely possible to run 1000 mph and not get anywhere. I have
+                expended countless hours on projects, but my own observational biases may prevent me from seeing areas
+                I'm
+                lacking, my fears may prevent me from expanding into new areas,
+                and I just sometimes don't know what I don't know. All of these reasons are great reasons to create some
+                type of feedback loop, whether it's through tests, code challenges,
+                mentors, or meetup groups. Find someway to get some feedback on your progress so your progress won't all
+                be
+                for naught.
+                <li>Repetition:</li>
+              <p>Neuro-biology has spoken. We simply cannot learn without repeatably using the same neuropathways
+                inorder
+                to
+                strengthen them. Learning cannot happen without repetition.
+            </ul>
+          </article>
+        </section>
+        <section class="main-section" id="ADA_Matters">
+          <header>ADA Matters</header>
+          <article>
+            <p>This should go without saying, but it wasn't until I had personal experiences in the workplace that I
+              understood how important it was to make a clear plan for ADA accessibility.
+              It's not just smart. It's what good people do...</p>
+          </article>
+        </section>
+        <section class="main-section" id="Memorize_For_Loops">
+          <header>Memorize For Loops</header>
+          <article>
+            <p>You use it that much. It's everywhere. Memorize the simple for loop. It will save you a ton of time.</p>
             <pre>
                 <code class="code-block">
-                  { // TDZ starts at beginning of scope
-                    console.log(bar); // undefined
-                    console.log(foo); // ReferenceError
-                    var bar = 1;
-                    let foo = 2; // End of TDZ (for foo)
-                  }
-                </code>
-              </pre>
-            The term "temporal" is used because the zone depends on the order of execution (time) rather than the order
-            in
-            which the code is written (position).
-            For example, the code below works because, even though the function that uses the let variable appears
-            before
-            the variable is declared, the function is called outside the TDZ.
-            <code>
-            </code>
-        </article>
-      </section>
-      <section class="main-section" id="An_Object_or_Array_declared_by_const_is_not_necessarily_immutable">
-        <header>An Object or Array declared by const is not necessarily immutable</header>
-        <article>
-          <p>From <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const">MDN:</a>
-          </p>
-          <blockquote>
-            Constants are block-scoped, much like variables declared using the let keyword.
-            The value of a constant can't be changed through reassignment
-            (i.e. by using the assignment operator), and it can't be redeclared
-            (i.e. through a variable declaration). <b>However, if a constant is an
-              object or array its properties or items can be updated or removed.</b>
-          </blockquote>
-          <p>Check out this example:</p>
-          <pre>
+                for (let i = 0; i < 5; i++) {
+                  ourArray.push(i);
+                }
+              </code>
+            </pre>
+          </article>
+        </section>
+        <section class="main-section" id="Nested_For_Loops">
+          <header>Nested For Loops</header>
+          <article>
+            <p>If you ever want to apply an event listener to multiple elements with the same class you need to use a
+              nested
+              for loop or a combination of a for loop with <code>.map()</code>.
+              Just like the previous entry, it happpens a lot, so worth spending a little extra time memorizing the
+              syntax
+              and getting used to how it works.</p>
+            <pre>
                 <code class="code-block">
-                  const a = [1, 2];
-                  //const a is declared and defined as an array with two values...'1' and '2'
-                  const a = [1, 2, 3];
-                  //will return 'TypeError: invalid assignment' because a const can't be reassigned
-                  const.push(3);
-                  console.log(a);
-                  //returns [1, 2, 3] because you can still modify the items or properties of arrays and objects
-                </code>
-              </pre>
-          <code>
-            </code>
-        </article>
-      </section>
-      <section class="main-section" id="CLI_commands">
-        <header>CLI commands</header>
-        <article>
-          <p>Here are a few commonly used Git Commands. Learning how to use the CLI in your favorite IDE (mine is Atom)
-            will make a ton of difference in how fast you can accomplish things</p>
-          <ul>
-            <li><code>mkdir folderName</code> makes a new folder with the name "folderName"</li>
-            <li><code>cd folderName </code> navigates into the "folderName" folder</li>
-            <li><code>cd .. </code> navigates out of the "folderName" folder</li>
-            <li><code>ls</code> shows anything else in the folder</li>
-            <li><code class="code-block">echo "# delete-me" >> README.md
-                  git init
-                  git add README.md
-                  git commit -m "first commit"
-                  git branch -M main
-                  git remote add origin https://github.com/accountName/File-Name.git
-                  git push -u origin main
-                </code> This series of commands writes a file "README.md", initializes a new git directory, adds the
-              README.md file, creates the first commit statement, creates and sets the
-              branch you will be making commits to as "main", sets the remote git server repo to the repo named
-              "File-Name" in the 'accountName' account, and then pushes all of that to the remote repo.
-              It's a classical order of commands used to start any new Github Repo on your local computer.</li>
-            <li><code>git status</code> shows what folders have changes and will or won't be pushed if you make a push
-              at
-              the current point.</li>
-            <li><code>git add -A</code> adds all of the untracked changes to a tracked status</li>
-            <li><code>git commit -m ""</code> adds a commit message with whatever is in between the quotes</li>
-            <li><code>git push</code> pushes local changes to the github repo</li>
-            <li><code>git checkout</code> shows at any certain commit what the changes were that were made (so you can
-              get
-              an idea which commit to revert to if you need to change)</li>
-            <li><code>git merge</code> merges changes from working branches into main branches</li>
-            <li><code>git fetch</code> sometimes your changes get pushed wrong and you have to "store" them while you're
-              trying to fix a problem before they can then be pushed. This is usually
-              accomplished with a <code>git fetch</code> and a <code>git stash</code></li>
-            <li><code>git pull</code> ALWAYS, ALWAYS, ALWAYS do this before a <code>git push</code>. It pulls down other
-              co-workers changes into your changes before you push yours. If this doesn't
-              happeny, you often overwrite hours, days or even weeks of their hard work.</li>
-          </ul>
-          <code>
-            </code>
-        </article>
-      </section>
-      <section class="main-section" id="Sticky_Situation">
-        <header>Sticky Situation</header>
-        <article>
-          <p>Actually as part of this project I had to learn a few things about creating a sticky menu.
-            It's not just as easy as adding <code>position: sticky;</code> in your CSS. You need a few things:</p>
-          <ul>
-            <li>The following code needs to be on the element you want to stick:
-              <code class="code-block">
-
-                  .sticky {
-                    position: sticky;
-                    top: 0;
-                    left: 0;
+                for (let i = 0; i < arr.length; i++) {
+                  for (let j = 0; j < arr[i].length; j++) {
+                    console.log(arr[i][j]);
                   }
-  
-                </code>Notice it takes all three things. The position, the top to indicate where it needs to start
-              sticking. And
-              the left indicates how far aligned left it is. Also, notice it's just "0", not "0px".
-            </li>
-            <li>Parent element needs to have <code>display: block</code></li>
-            <li>There needs to be at least two child elements. Otherwise there is nothing for the sticky element to
-              'float' over.</li>
-            <li>Parent element cannot have <code>overflow: hidden</code>, <code>overflow: scroll</code>, or
-              <code>overflow: auto</code>
-            </li>
-            <li>Parent element can't have <code>display: flexbox;</code>. This was my problem. I got around it by
-              keeping
-              my containers I need to have flex with
-              flexbox and then put a <code>&lt;div&gt;</code> inbetween the parent and child and making the div the new
-              parent and giving it a <code>display: block;</code></li>
-          </ul>
-        </article>
-      </section>
-    </main>
+                }
+              </code>
+            </pre>
+          </article>
+        </section>
+        <section class="main-section" id="Loops_can_go_backwards">
+          <header>Loops can go backwards</header>
+          <article>
+            <p>They can! Check it out. Essentially the same process , but nice to know you can do it because sometimes
+              it
+              makes sense to work in reverse.
+              See this <a
+                href="https://www.htmlgoodies.com/javascript/the-advantages-of-backwards-iteration-as-demonstrated-in-javascript/">use
+                case.</a></p>
+            <pre>
+                <code class="code-block">
+                  for (let i = 10; i > 0; i--) {
+                    ourArray.push(i);
+                  }
+              </code>
+            </pre>
+          </article>
+        </section>
+        <section class="main-section" id="Var_Let_and_Const">
+          <header>Var, Let, and Const</header>
+          <article>
+            <p>When I first learned about <code>var</code>,<code>let</code>,and <code>const</code> I picked up that the
+              value of <code>var</code> and <code>let</code> could be reassigned, and
+              that <code>const</code> couldn't, but I didn't pick up on their lexical scope. Super important! So what
+              are
+              the differences?</p>
+            <table class="table">
+              <tr>
+                <th>Name</th>
+                <th>Global Scope</th>
+                <th>Function Scope</th>
+                <th>Block Scope</th>
+                <th>Able to be Redeclared</th>
+                <th>Able to be Updated</th>
+                <th>Able to be Hoisted</th>
+              </tr>
+              <tr>
+                <td>Var</td>
+                <td>Automatically has global scope if declared outside of a function</td>
+                <td>Has function scope if declared in a function</td>
+                <td>Does not have block scope (this is why it gets hoisted)</td>
+                <td>Yep, that's why it's tempting to use it</td>
+                <td>Yep, that's why it's tempting to use it</td>
+                <td>Yep</td>
+              </tr>
+              <tr>
+                <td>Let</td>
+                <td>Nope</td>
+                <td>Nope</td>
+                <td>Yep</td>
+                <td>Nope (at least not within the same scope)</td>
+                <td>Yes (within it's scope)</td>
+                <td>Yep, but if you try to use it before it's declared you'll get a <code>Reference Error</code>It's the
+                  TDZ
+                  thing.</td>
+              </tr>
+              <tr>
+                <td>Const</td>
+                <td>Nope</td>
+                <td>Nope</td>
+                <td>Yep</td>
+                <td>Nope</td>
+                <td>Objects and Arrays, yes. Otherwise, no</td>
+                <td>Gets hoisted, but remain uninitialized until evaluated at runtime. Hence the TDZ</td>
+              </tr>
+            </table>
+          </article>
+        </section>
+        <section class="main-section" id="Temporal_Dead_Zone">
+          <header>Temporal Dead Zone</header>
+          <article>
+            <p>From <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let">MDN</a>
+            </p>
+            <h3>Temporal dead zone (TDZ)</h3>
+            <blockquote>let variables cannot be read/written until they have been fully initialized,
+              which happens when they are declared (if no initial value is specified on declaration,
+              the variable is initialized with a value of undefined). Accessing the variable before the
+              initialization results in a ReferenceError.
+              <em>Note: This differs from var variables, which will return a value of undefined if they are accessed
+                before
+                they are declared.</em>
+              The variable is said to be in a "temporal dead zone" (TDZ) from the start of the block until the
+              initialization has completed.
+              <pre>
+                  <code class="code-block">
+                    { // TDZ starts at beginning of scope
+                      console.log(bar); // undefined
+                      console.log(foo); // ReferenceError
+                      var bar = 1;
+                      let foo = 2; // End of TDZ (for foo)
+                    }
+                  </code>
+                </pre>
+              The term "temporal" is used because the zone depends on the order of execution (time) rather than the
+              order
+              in
+              which the code is written (position).
+              For example, the code below works because, even though the function that uses the let variable appears
+              before
+              the variable is declared, the function is called outside the TDZ.
+              <code>
+              </code>
+          </article>
+        </section>
+        <section class="main-section" id="An_Object_or_Array_declared_by_const_is_not_necessarily_immutable">
+          <header>An Object or Array declared by const is not necessarily immutable</header>
+          <article>
+            <p>From <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const">MDN:</a>
+            </p>
+            <blockquote>
+              Constants are block-scoped, much like variables declared using the let keyword.
+              The value of a constant can't be changed through reassignment
+              (i.e. by using the assignment operator), and it can't be redeclared
+              (i.e. through a variable declaration). <b>However, if a constant is an
+                object or array its properties or items can be updated or removed.</b>
+            </blockquote>
+            <p>Check out this example:</p>
+            <pre>
+                  <code class="code-block">
+                    const a = [1, 2];
+                    //const a is declared and defined as an array with two values...'1' and '2'
+                    const a = [1, 2, 3];
+                    //will return 'TypeError: invalid assignment' because a const can't be reassigned
+                    const.push(3);
+                    console.log(a);
+                    //returns [1, 2, 3] because you can still modify the items or properties of arrays and objects
+                  </code>
+                </pre>
+            <code>
+              </code>
+          </article>
+        </section>
+        <section class="main-section" id="CLI_commands">
+          <header>CLI commands</header>
+          <article>
+            <p>Here are a few commonly used Git Commands. Learning how to use the CLI in your favorite IDE (mine is
+              Atom)
+              will make a ton of difference in how fast you can accomplish things</p>
+            <ul>
+              <li><code>mkdir folderName</code> makes a new folder with the name "folderName"</li>
+              <li><code>cd folderName </code> navigates into the "folderName" folder</li>
+              <li><code>cd .. </code> navigates out of the "folderName" folder</li>
+              <li><code>ls</code> shows anything else in the folder</li>
+              <li><code class="code-block">echo "# delete-me" >> README.md
+                    git init
+                    git add README.md
+                    git commit -m "first commit"
+                    git branch -M main
+                    git remote add origin https://github.com/accountName/File-Name.git
+                    git push -u origin main
+                  </code> This series of commands writes a file "README.md", initializes a new git directory, adds the
+                README.md file, creates the first commit statement, creates and sets the
+                branch you will be making commits to as "main", sets the remote git server repo to the repo named
+                "File-Name" in the 'accountName' account, and then pushes all of that to the remote repo.
+                It's a classical order of commands used to start any new Github Repo on your local computer.</li>
+              <li><code>git status</code> shows what folders have changes and will or won't be pushed if you make a push
+                at
+                the current point.</li>
+              <li><code>git add -A</code> adds all of the untracked changes to a tracked status</li>
+              <li><code>git commit -m ""</code> adds a commit message with whatever is in between the quotes</li>
+              <li><code>git push</code> pushes local changes to the github repo</li>
+              <li><code>git checkout</code> shows at any certain commit what the changes were that were made (so you can
+                get
+                an idea which commit to revert to if you need to change)</li>
+              <li><code>git merge</code> merges changes from working branches into main branches</li>
+              <li><code>git fetch</code> sometimes your changes get pushed wrong and you have to "store" them while
+                you're
+                trying to fix a problem before they can then be pushed. This is usually
+                accomplished with a <code>git fetch</code> and a <code>git stash</code></li>
+              <li><code>git pull</code> ALWAYS, ALWAYS, ALWAYS do this before a <code>git push</code>. It pulls down
+                other
+                co-workers changes into your changes before you push yours. If this doesn't
+                happeny, you often overwrite hours, days or even weeks of their hard work.</li>
+            </ul>
+            <code>
+              </code>
+          </article>
+        </section>
+        <section class="main-section" id="Sticky_Situation">
+          <header>Sticky Situation</header>
+          <article>
+            <p>Actually as part of this project I had to learn a few things about creating a sticky menu.
+              It's not just as easy as adding <code>position: sticky;</code> in your CSS. You need a few things:</p>
+            <ul>
+              <li>The following code needs to be on the element you want to stick:
+                <code class="code-block">
+
+                    .sticky {
+                      position: sticky;
+                      top: 0;
+                      left: 0;
+                    }
+    
+                  </code>Notice it takes all three things. The position, the top to indicate where it needs to start
+                sticking. And
+                the left indicates how far aligned left it is. Also, notice it's just "0", not "0px".
+              </li>
+              <li>Parent element needs to have <code>display: block</code></li>
+              <li>There needs to be at least two child elements. Otherwise there is nothing for the sticky element to
+                'float' over.</li>
+              <li>Parent element cannot have <code>overflow: hidden</code>, <code>overflow: scroll</code>, or
+                <code>overflow: auto</code>
+              </li>
+              <li>Parent element can't have <code>display: flexbox;</code>. This was my problem. I got around it by
+                keeping
+                my containers I need to have flex with
+                flexbox and then put a <code>&lt;div&gt;</code> inbetween the parent and child and making the div the
+                new
+                parent and giving it a <code>display: block;</code></li>
+            </ul>
+          </article>
+        </section>
+      </main>
+    </div>
   </div>
   <footer>
     <div class="footer-info-container">
