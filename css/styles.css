@@ -71,10 +71,9 @@ code {
 footer {
   display: flex;
   position: sticky;
-  bottom: 100;
-  height: 10vh;
+  bottom: 0;
+  height: 6vh;
   min-width: 100%;
-  border: 1px red solid;
 }
 
 header {
@@ -152,6 +151,28 @@ table {
   padding: 1em;
 }
 
+.footer-info-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0em 2em;
+  justify-content: space-between;
+  height: fit-content;
+  width: 100%;
+  background: rgb(217, 115, 26);
+  background: linear-gradient(90deg, rgba(217, 115, 26, 1) 35%, rgba(255, 255, 255, 1) 100%);
+}
+
+.footer-info-container>p {
+  width: fit-content;
+  text-transform: uppercase;
+  color: white;
+}
+
+.footer-info-container>img {
+  width: 2vw;
+}
+
 .image {
   width: 100%;
   height: auto;
@@ -166,7 +187,7 @@ li::marker {
 }
 
 .nav-header {
-  margin: 2em auto auto auto;
+  margin: 0em;
 }
 
 .nav-bar {
