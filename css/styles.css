@@ -92,6 +92,7 @@ li>a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
+  transition: all 2s ease-in-out;
 }
 
 nav>ul>li {
@@ -102,10 +103,12 @@ nav>ul>li {
   list-style: none;
   min-height: fit-content;
   padding: .65em;
+  transition: all 2s ease-in-out;
 }
 
 nav>ul>li:hover {
   background-color: #038C7F;
+  transition: all 2s ease-in-out;
 }
 
 section {
@@ -159,14 +162,15 @@ table {
   justify-content: space-between;
   height: fit-content;
   width: 100%;
-  background: rgb(217, 115, 26);
-  background: linear-gradient(90deg, rgba(217, 115, 26, 1) 35%, rgba(255, 255, 255, 1) 100%);
+  transition: all 2s ease-in-out;
 }
 
 .footer-info-container>p {
   width: fit-content;
   text-transform: uppercase;
-  color: white;
+  color: rgb(217, 115, 26);
+  transition: all 2s ease-in-out;
+  text-shadow: 4px 4px 8px rgba(255, 255, 255, 0.6);
 }
 
 .footer-info-container>img {
@@ -192,12 +196,17 @@ li::marker {
 
 .nav-bar {
   max-width: 450px;
+  transition: all 2s ease-in-out;
 }
 
 .sticky {
   position: sticky;
   z-index: 100;
   top: 0;
+}
+
+.sticky>ul {
+  transition: all 2s ease-in-out;
 }
 
 .title {
@@ -219,19 +228,35 @@ li::marker {
 
   .sticky>ul {
     padding: 0px;
+    transition: all 2s ease-in-out;
   }
 
-  nav>div>ul>li {
+  nav>ul>li {
     background-color: #04B2D9;
     border-style: solid;
     border-width: 2px;
     color: white;
     list-style: none;
     min-height: fit-content;
-    padding: .65em;
-    width: inherit;
+    padding: .5em;
+    transition: all 2s ease-in-out;
+  }
+
+  .nav-bar {
+    max-width: 256px;
+    transition: all 2s ease-in-out;
+  }
+
+  li>a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .75em;
+    transition: all 2s ease-in-out;
   }
 }
+
+
 
 @media screen and (max-width: 900px) and (orientation: landscape) {
   nav>div>ul>li {
