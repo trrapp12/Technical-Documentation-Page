@@ -212,6 +212,7 @@ li::marker {
 
 .title {
   text-transform: uppercase;
+  margin: 4rem;
 }
 
 .table {
