@@ -36,7 +36,6 @@
 
 *This is an example of a technical documentation page.  It comes complete with a sticky nav bar and a great use of HTML5 tags for clear, semantic coding.  Also, design is responsive with use of flex-box.  Overall very-well put together project with clean design, good use of color, semantically coded, and solid use of CSS.  Great portfolio piece.*
 <br>
-<br>
 
 ---
 
@@ -73,7 +72,6 @@
 - [X] **User Story #15:** My Technical Documentation page should use at least one media query.
 
 <br>
-<br>
 
 ---
 
@@ -81,11 +79,15 @@
 
 - [X] 100% of the work on this project was my own.  The original requirements of the project, as listed in the user stories, were provided for direction as part of the Free Code Camp course.
 
+<br/>
+
 ---
 
 ### FREE CODE CAMP RESPONSIVE WEB DESIGN CERTIFICATE:
 
 ![freeCodeCampResponsiveWebDesign.png](https://user-images.githubusercontent.com/11747875/257409023-964325b1-9779-48c7-bc0a-a9852a93d0cb.png)
+
+<br/>
 
 ---
 
