@@ -77,11 +77,21 @@
 
 ---
 
+### MY OWN PERSONAL CONTRIBUTIONS INCLUDED 
+
+- [X] 100% of the work on this project was my own.  The original requirements of the project, as listed in the user stories, were provided for direction as part of the Free Code Camp course.
+
+---
+
 ### FREE CODE CAMP RESPONSIVE WEB DESIGN CERTIFICATE:
 
 ![freeCodeCampResponsiveWebDesign.png](https://user-images.githubusercontent.com/11747875/257409023-964325b1-9779-48c7-bc0a-a9852a93d0cb.png)
 
 ---
+
+### ATTRIBUTIONS
+
+* n/a
 
 ### YOU CAN FIND ME AT:
 
